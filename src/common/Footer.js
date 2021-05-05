@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
-        <div>
-            <div class="sitemap">
+        <div class="footer grid  grid-cols-3">
+            <div class="sitemap col-span-2">
                 <div class="heading">
                     網頁指南
                 </div>

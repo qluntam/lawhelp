@@ -8,7 +8,7 @@ export default function Header() {
                     <li>簡體</li>
                 </ul>
             </div>
-            <nav>
+            <nav class="top-menu">
                 <ul>
                     <li>logo1</li>
                     <li>主頁</li>
