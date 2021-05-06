@@ -1,3 +1,7 @@
+import fb from '../assets/images/icons/fb.svg';
+import ig from '../assets/images/icons/ig.svg';
+import yt from '../assets/images/icons/yt.svg';
+
 export default function Footer() {
     return (
         <div class="footer grid  grid-cols-3">
@@ -5,7 +9,7 @@ export default function Footer() {
                 <div class="heading">
                     網頁指南
                 </div>
-                <ul>
+                <ul class=" flex flex-row">
                     <li>署鍳前言</li>
                     <li>賀詞</li>
                     <li>光輝里程</li>
@@ -19,12 +23,18 @@ export default function Footer() {
                 </ul>
             </div>
             <div class="copyright-social">
-                <div class="social-logo">
-                    <div class="fb-logo"></div>
-                    <div class="ig-logo"></div>
-                    <div class="yb-logo"></div>
+                <div class="social-logo flex justify-end">
+                    <div class="fb-logo">
+                        <img src={fb} alt="Facebook" width="30" />
+                    </div>
+                    <div class="ig-logo">
+                        <img src={ig} alt="Instagram" width="30" />
+                    </div>
+                    <div class="yt-logo">
+                        <img src={yt} alt="Youtube" width="30" />
+                    </div>
                 </div>
-                <div>
+                <div class="text-right">
                     <div>CONTACT ME</div>
                     <div>LAD</div>
                     <div>Copyright © xxxxxxxxxxxxx. All rights reserved.</div>
