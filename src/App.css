@@ -48,6 +48,11 @@
 .sub.banner {
   height: 768px;
 }
+.open.banner {
+  height: 768px;
+  background-size: contain;
+  background-position: left top;
+}
 .lang-bar {
   position:absolute;
   margin: 0 0 0 auto;
@@ -59,7 +64,25 @@
 .copyright-social {
   background-color: #1B67B0;
 }
-
+.slogon {
+  background-color: #152A88;
+}
+.nav-now {
+  position: relative;
+}
+.nav-now .nav-tips {
+  position: absolute;
+  display: none;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  margin-left: 200px;
+  white-space: nowrap;
+  width: 120px;
+  text-align: center;
+}
+.nav-now:hover .nav-tips {
+  display: inline-block;
+}
 
 
 @keyframes App-logo-spin {

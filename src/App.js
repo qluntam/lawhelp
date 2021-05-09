@@ -6,26 +6,39 @@ import {
 } from "react-router-dom";
 import Header from './common/Header.js';
 import Footer from './common/Footer.js';
+import Banner from './pages/Banner.js';
 import Home from './pages/Home.js';
 import Director from './pages/Director.js';
+
+import React, { useEffect } from 'react';
 
 function App() {
 
   return (
     <Router>
       <div className="container mx-auto">
-        <div className="page">
-          <Header />
           <Switch>
+            <Route exact path="/open">
+            <div className="page">
+              <Header type="opening" />               
+              <Banner />
+              </div>
+            </Route>
             <Route exact path="/">
-              <Home />
+              <div className="page">
+                <Header />
+                <Home />
+                <Footer />
+              </div>
             </Route>
             <Route path="/director">
-              <Director />
+              <div className="page">
+                <Header type="sub" />
+                <Director />
+                <Footer />
+              </div>
             </Route>
           </Switch>
-        </div>
-        <Footer />
       </div>
     </Router>
   );
