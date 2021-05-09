@@ -3,6 +3,11 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
+    textColor: {
+      'primary': '#00446F',
+      'white': '#ffffff',
+      'fsm': '#E45006',
+    }
   },
   variants: {
     extend: {},

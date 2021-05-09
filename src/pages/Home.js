@@ -1,11 +1,13 @@
-import banner from '../assets/images/home/banner1.png';
+import banner from '../assets/images/banner/home.png';
+import slogon from '../assets/images/banner/slogon.png';
 
 export default function Home() {
     return (
-        <div class="banner" style={{ backgroundImage: `url(${banner})` }}>
-            <div class="slogan">
-                <div class="line1">法援五十年 跨步再向前</div>
-                <div class="line2">50 Years of Legal Aid, Moving Forward with Pride</div>
+        <div>
+            <div className="banner flex place-items-end h-full bg-cover bg-top" style={{ backgroundImage: `url(${banner})` }}>
+                <div className="m-auto mr-10 pb-96  text-center">
+                    <img src={slogon} className="object-scale-down w-9/12 ml-auto mr-0" />
+                </div>
             </div>
         </div>
     );
