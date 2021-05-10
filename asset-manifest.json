@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/qluntam/lawhelp/static/css/main.f421a32a.chunk.css",
+    "main.js": "/qluntam/lawhelp/static/js/main.a4aac697.chunk.js",
+    "main.js.map": "/qluntam/lawhelp/static/js/main.a4aac697.chunk.js.map",
+    "runtime-main.js": "/qluntam/lawhelp/static/js/runtime-main.1528f2b3.js",
+    "runtime-main.js.map": "/qluntam/lawhelp/static/js/runtime-main.1528f2b3.js.map",
+    "static/js/2.e132a8a7.chunk.js": "/qluntam/lawhelp/static/js/2.e132a8a7.chunk.js",
+    "static/js/2.e132a8a7.chunk.js.map": "/qluntam/lawhelp/static/js/2.e132a8a7.chunk.js.map",
+    "static/js/3.ca09bd32.chunk.js": "/qluntam/lawhelp/static/js/3.ca09bd32.chunk.js",
+    "static/js/3.ca09bd32.chunk.js.map": "/qluntam/lawhelp/static/js/3.ca09bd32.chunk.js.map",
+    "index.html": "/qluntam/lawhelp/index.html",
+    "static/css/main.f421a32a.chunk.css.map": "/qluntam/lawhelp/static/css/main.f421a32a.chunk.css.map",
+    "static/js/2.e132a8a7.chunk.js.LICENSE.txt": "/qluntam/lawhelp/static/js/2.e132a8a7.chunk.js.LICENSE.txt",
+    "static/media/cal.c19edade.svg": "/qluntam/lawhelp/static/media/cal.c19edade.svg",
+    "static/media/director.a9738abc.jpg": "/qluntam/lawhelp/static/media/director.a9738abc.jpg",
+    "static/media/director.eb22baa9.svg": "/qluntam/lawhelp/static/media/director.eb22baa9.svg",
+    "static/media/directors.776d307c.png": "/qluntam/lawhelp/static/media/directors.776d307c.png",
+    "static/media/fb.6ab53a77.svg": "/qluntam/lawhelp/static/media/fb.6ab53a77.svg",
+    "static/media/home.213c7797.png": "/qluntam/lawhelp/static/media/home.213c7797.png",
+    "static/media/homepage.bac04292.svg": "/qluntam/lawhelp/static/media/homepage.bac04292.svg",
+    "static/media/ig.4f37e976.svg": "/qluntam/lawhelp/static/media/ig.4f37e976.svg",
+    "static/media/logo-fifty-white.3508053c.png": "/qluntam/lawhelp/static/media/logo-fifty-white.3508053c.png",
+    "static/media/logo-fifty.1de89fb2.png": "/qluntam/lawhelp/static/media/logo-fifty.1de89fb2.png",
+    "static/media/logo-lad.96d7e699.png": "/qluntam/lawhelp/static/media/logo-lad.96d7e699.png",
+    "static/media/milestone.2d8288ce.svg": "/qluntam/lawhelp/static/media/milestone.2d8288ce.svg",
+    "static/media/msg.2044fed6.svg": "/qluntam/lawhelp/static/media/msg.2044fed6.svg",
+    "static/media/nav.df0b29dd.svg": "/qluntam/lawhelp/static/media/nav.df0b29dd.svg",
+    "static/media/opening.4c3745fd.png": "/qluntam/lawhelp/static/media/opening.4c3745fd.png",
+    "static/media/slogon-white.f9e07365.png": "/qluntam/lawhelp/static/media/slogon-white.f9e07365.png",
+    "static/media/slogon.76f0185c.png": "/qluntam/lawhelp/static/media/slogon.76f0185c.png",
+    "static/media/yt.5c10cc1b.svg": "/qluntam/lawhelp/static/media/yt.5c10cc1b.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1528f2b3.js",
+    "static/js/2.e132a8a7.chunk.js",
+    "static/css/main.f421a32a.chunk.css",
+    "static/js/main.a4aac697.chunk.js"
+  ]
+}
