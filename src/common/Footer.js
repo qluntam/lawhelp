@@ -17,20 +17,21 @@ export default function Footer() {
                     網頁指南
                 </div>
                 <ul className="flex flex-row">
-                    <li className="text-2xl mr-9">
+                    <li className="text-2xl mr-9 hover:text-white">
                         <Link to="/director">署長前言</Link>
                     </li>
-                    <li className="text-2xl mr-9">
+                    <li className="text-2xl mr-9 hover:text-white">
                         <Link to="/">賀詞</Link>
                     </li>
-                    <li className="text-2xl mr-9">
+                    <li className="text-2xl mr-9 hover:text-white">
                         <Link to="/">光輝里程</Link>
                     </li>
-                    <li className="text-2xl text-center">活動日程
+                    <li className="text-2xl text-center">
+                        <div className="hover:text-white">活動日程</div>
                         <ul>
-                            <li className="text-xl">6月</li>
-                            <li className="text-xl">7月</li>
-                            <li className="text-xl">8月</li>
+                            <li className="text-xl hover:text-white">6月</li>
+                            <li className="text-xl hover:text-white">7月</li>
+                            <li className="text-xl hover:text-white">8月</li>
                         </ul>
                     </li>
                 </ul>

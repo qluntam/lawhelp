@@ -60,12 +60,14 @@ class Header extends React.Component {
         const {navLayer, navIcon,homepageIcon, directorIcon, msgIcon, milestoneIcon, calIcon
         } = this.state;
 
-        let langClass = '';
+        let langClass = ' hover:text-lang-bar';
         let openingHide = '';
         let logoPath = logofifty;
+        let topBar = '';
 
         if (this.props.type == 'sub') {
-            langClass = ' rounded-full bg-white text-primary';
+            langClass = ' text-primary hover:text-lang-bar';
+            topBar = ' bg-white';
         }
     
         if (this.props.type == 'opening') {
@@ -76,15 +78,15 @@ class Header extends React.Component {
         
         return (
             <div className="head">
-                <div className="flex flex-row mb-8 justify-between mt-4">
+                <div className={`flex flex-row mb-8 justify-between py-4` + (topBar)}>
                     <div className="flex flex-row ml-8">
                         <div><img src={logolad} alt="LAD" className="object-scale-down h-28 mr-8" /></div>
                         <div><img src={logoPath} alt="Fifty" className="object-scale-down h-28" /></div>
                     </div>
-                    <div className="text-center mr-4">
+                    <div className="text-center mr-4 mt-5">
                         <ul>
-                            <li className={`text-primary mb-3 px-7 text-xl` + (langClass)}>English</li>
-                            <li className={`text-primary px-7 text-xl` + (langClass)}>簡體</li>
+                            <li className={`text-primary mb-3 px- text-base` + (langClass)}>English</li>
+                            <li className={`text-primary px-7 text-base` + (langClass)}>簡體</li>
                         </ul>
                     </div>
                 </div>
@@ -97,27 +99,27 @@ class Header extends React.Component {
                                         <img src={close} className="object-scale-down w-10 h-10 m-auto" />
                                     </div>
                                 </li>
-                                <li className="my-10 text-2xl">
+                                <li className="my-10 text-lg">
                                     <Link to="/"  onClick={this.showMenu}>
                                     首頁
                                     </Link>
                                 </li>
-                                <li className="my-10 text-2xl">
+                                <li className="my-10 text-lg">
                                     <Link to="/director" onClick={this.showMenu}>
                                     署長前言
                                     </Link>
                                 </li>
-                                <li className="my-10 text-2xl">
+                                <li className="my-10 text-lg">
                                     <Link to="/" onClick={this.showMenu}>
                                     賀詞
                                     </Link>
                                 </li>
-                                <li className="my-10 text-2xl">
+                                <li className="my-10 text-lg">
                                     <Link to="/" onClick={this.showMenu}>
                                     光輝里程
                                     </Link>
                                 </li>
-                                <li className="my-10 text-2xl">
+                                <li className="my-10 text-lg">
                                     <Link to="/" onClick={this.showMenu}>
                                     活動日程
                                     </Link>
