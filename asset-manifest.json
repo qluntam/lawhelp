@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/lawhelp/static/css/main.bbba3d46.chunk.css",
-    "main.js": "/lawhelp/static/js/main.3063ac62.chunk.js",
-    "main.js.map": "/lawhelp/static/js/main.3063ac62.chunk.js.map",
+    "main.css": "/lawhelp/static/css/main.426dd842.chunk.css",
+    "main.js": "/lawhelp/static/js/main.655fdffc.chunk.js",
+    "main.js.map": "/lawhelp/static/js/main.655fdffc.chunk.js.map",
     "runtime-main.js": "/lawhelp/static/js/runtime-main.d05a9350.js",
     "runtime-main.js.map": "/lawhelp/static/js/runtime-main.d05a9350.js.map",
     "static/js/2.61a9fbd9.chunk.js": "/lawhelp/static/js/2.61a9fbd9.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.51b77d2a.chunk.js": "/lawhelp/static/js/3.51b77d2a.chunk.js",
     "static/js/3.51b77d2a.chunk.js.map": "/lawhelp/static/js/3.51b77d2a.chunk.js.map",
     "index.html": "/lawhelp/index.html",
-    "static/css/main.bbba3d46.chunk.css.map": "/lawhelp/static/css/main.bbba3d46.chunk.css.map",
+    "static/css/main.426dd842.chunk.css.map": "/lawhelp/static/css/main.426dd842.chunk.css.map",
     "static/js/2.61a9fbd9.chunk.js.LICENSE.txt": "/lawhelp/static/js/2.61a9fbd9.chunk.js.LICENSE.txt",
     "static/media/cal-hover.86513ff6.svg": "/lawhelp/static/media/cal-hover.86513ff6.svg",
     "static/media/cal.c19edade.svg": "/lawhelp/static/media/cal.c19edade.svg",
@@ -42,7 +42,7 @@
   "entrypoints": [
     "static/js/runtime-main.d05a9350.js",
     "static/js/2.61a9fbd9.chunk.js",
-    "static/css/main.bbba3d46.chunk.css",
-    "static/js/main.3063ac62.chunk.js"
+    "static/css/main.426dd842.chunk.css",
+    "static/js/main.655fdffc.chunk.js"
   ]
 }
