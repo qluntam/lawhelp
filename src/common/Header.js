@@ -83,7 +83,7 @@ class Header extends React.Component {
                     </div>
                     <div className="text-center mr-4">
                         <ul>
-                            <li className={` mb-3 px-7 text-xl` + (langClass)}>English</li>
+                            <li className={`text-primary mb-3 px-7 text-xl` + (langClass)}>English</li>
                             <li className={`text-primary px-7 text-xl` + (langClass)}>簡體</li>
                         </ul>
                     </div>
