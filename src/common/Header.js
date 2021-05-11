@@ -60,7 +60,7 @@ class Header extends React.Component {
         const {navLayer, navIcon,homepageIcon, directorIcon, msgIcon, milestoneIcon, calIcon
         } = this.state;
 
-        let langClass = ' hover:text-lang-bar';
+        let langClass = ' text-primary hover:text-lang-bar';
         let openingHide = '';
         let logoPath = logofifty;
         let topBar = '';
@@ -85,8 +85,8 @@ class Header extends React.Component {
                     </div>
                     <div className="text-center mr-4 mt-5">
                         <ul>
-                            <li className={`text-primary mb-3 px- text-base` + (langClass)}>English</li>
-                            <li className={`text-primary px-7 text-base` + (langClass)}>簡體</li>
+                            <li className={`mb-3 px7 text-base` + (langClass)}>English</li>
+                            <li className={`px-7 text-base` + (langClass)}>簡體</li>
                         </ul>
                     </div>
                 </div>
