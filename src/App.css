@@ -40,13 +40,14 @@
 }
 .banner {
   width: 100%;
-  height: 1424px;
+  height: calc( 1280px * 0.74 );
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left bottom;
 }
 .sub.banner {
   height: 768px;
+  background-position: right top;
 }
 .open.banner {
   height: 768px;
@@ -75,13 +76,21 @@
   display: none;
   padding: 10px 20px;
   background-color: #ffffff;
-  margin-left: 200px;
+  margin-left: 185px;
   white-space: nowrap;
   width: 120px;
   text-align: center;
 }
+.nav-now:hover {
+  background-color:#00446F;
+}
 .nav-now:hover .nav-tips {
   display: inline-block;
+}
+.icon-layer {
+  z-index: 99;
+  background-color:#00446F;
+  color: #ffffff;
 }
 
 

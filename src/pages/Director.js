@@ -1,13 +1,21 @@
 import banner from '../assets/images/banner/directors.png';
-import directorImg from '../assets/images/pages/director.jpg';
+import directorImg from '../assets/images/pages/director.jpg'; 
+import directorTitle from '../assets/images/banner/director-title.png'; 
 
 export default function Home() {
     return (
         <div>
-            <div className="sub banner flex place-items-end h-full bg-cover bg-top" style={{ backgroundImage: `url(${banner})` }}></div>
+            <div className="sub banner flex place-items-end h-full bg-cover bg-right-top" style={{ backgroundImage: `url(${banner})` }}>
+                <img src={directorTitle} className="mt-auto mb-5 object-scale-down w-4/12 ml-72 " />
+            </div>
             <div className="grid grid-cols-3">
                 <div>
                     <img src={directorImg} className="object-scale-down w-80 m-7" />
+                    <div className="ml-20">
+                        鄺寶昌 Thomas Edward Kwong <br />
+                        法律援助署署長 <br />
+                        Director of Legal Aid
+                    </div>
                 </div>
                 <div className="col-span-2 mt-7 mr-7 mb-7 text-justify">
                 <p className="mb-4">本署於2000年出版「法義之門」紀念特刊，為部門三十周年誌 慶。本署一直堅守使命，繼往開來，藉着前人奠下的堅 實穩固基 礎，不斷拓展及提升法律援助服務，確保所有符合資格接受法律 援助的人，不會因欠缺經濟能力而沒法尋求 公義。多年來，法援 署無懼種種改變和挑戰，與社會一同茁壯成長，成績令人振奮。 </p>
