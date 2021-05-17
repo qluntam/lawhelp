@@ -1,5 +1,5 @@
 import banner from '../assets/images/banner/directors.png';
-import directorImg from '../assets/images/pages/director.jpg'; 
+import directorImg from '../assets/images/pages/director/director.jpg'; 
 import directorTitle from '../assets/images/banner/director-title.png'; 
 
 export default function Director() {

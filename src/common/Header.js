@@ -237,9 +237,7 @@ class Header extends React.Component {
                                 }
                             } 
                             >
-                                <Link to="/milestone"
-                                
-                                >
+                                <Link to="/milestone">
                                     <img src={milestoneIcon} className="object-scale-down w-10 h-10 m-auto" />
                                 </Link>
                                 <div className="nav-tips text-fsm">光輝里程</div>
@@ -261,7 +259,7 @@ class Header extends React.Component {
                             }
                             >
                                 
-                                >
+                                <Link to="/events">
                                     <img src={calIcon} className="object-scale-down w-10 h-10 m-auto" />
                                 </Link>
                                 <div className="nav-tips text-fsm">活動日程</div>

@@ -14,7 +14,7 @@ import Milestone from './pages/Milestone.js';
 import Events from './pages/Events.js';
 
 
-import React, { useEffect } from 'react';
+import React from 'react';
 
 function App() {
 
