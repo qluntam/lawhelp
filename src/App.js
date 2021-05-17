@@ -22,13 +22,13 @@ function App() {
     <Router basename="/lad">
       <div className="container mx-auto">
           <Switch>
-            <Route exact path="/open">
+            <Route exact path="/">
             <div className="page">
               <Header type="opening" />               
               <Banner />
               </div>
             </Route>
-            <Route exact path="/">
+            <Route exact path="/home">
               <div className="page">
                 <Header />
                 <Home />

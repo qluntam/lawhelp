@@ -100,7 +100,7 @@ class Header extends React.Component {
                                     </div>
                                 </li>
                                 <li className="my-10 text-lg">
-                                    <Link to="/"  onClick={this.showMenu}>
+                                    <Link to="/home"  onClick={this.showMenu}>
                                     首頁
                                     </Link>
                                 </li>
@@ -168,7 +168,7 @@ class Header extends React.Component {
                                 }
                             } 
                             >
-                                <Link to="/"
+                                <Link to="/home"
                                 
                                 >
                                     <img src={homepageIcon} className="object-scale-down w-10 h-10 m-auto" />
