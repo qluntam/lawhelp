@@ -115,12 +115,12 @@ class Header extends React.Component {
                                     </Link>
                                 </li>
                                 <li className="my-10 text-lg">
-                                    <Link to="/" onClick={this.showMenu}>
+                                    <Link to="/milestone" onClick={this.showMenu}>
                                     光輝里程
                                     </Link>
                                 </li>
                                 <li className="my-10 text-lg">
-                                    <Link to="/" onClick={this.showMenu}>
+                                    <Link to="/events" onClick={this.showMenu}>
                                     活動日程
                                     </Link>
                                 </li>
@@ -237,7 +237,7 @@ class Header extends React.Component {
                                 }
                             } 
                             >
-                                <Link to="/"
+                                <Link to="/milestone"
                                 
                                 >
                                     <img src={milestoneIcon} className="object-scale-down w-10 h-10 m-auto" />
@@ -260,7 +260,6 @@ class Header extends React.Component {
                                 }
                             }
                             >
-                                <Link to="/"
                                 
                                 >
                                     <img src={calIcon} className="object-scale-down w-10 h-10 m-auto" />

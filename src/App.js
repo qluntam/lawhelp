@@ -10,6 +10,9 @@ import Banner from './pages/Banner.js';
 import Home from './pages/Home.js';
 import Director from './pages/Director.js';
 import Congrats from './pages/Congrats.js';
+import Milestone from './pages/Milestone.js';
+import Events from './pages/Events.js';
+
 
 import React, { useEffect } from 'react';
 
@@ -43,6 +46,20 @@ function App() {
               <div className="page">
                 <Header type="sub" />
                 <Congrats />
+                <Footer />
+              </div>
+            </Route>
+            <Route path="/milestone">
+              <div className="page">
+                <Header type="sub" />
+                <Milestone />
+                <Footer />
+              </div>
+            </Route>
+            <Route path="/events">
+              <div className="page">
+                <Header type="sub" />
+                <Events />
                 <Footer />
               </div>
             </Route>
