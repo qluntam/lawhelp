@@ -21,13 +21,15 @@ export default function Footer() {
                         <Link to="/director">署長前言</Link>
                     </li>
                     <li className="text-2xl mr-9 hover:text-white">
-                        <Link to="/">賀詞</Link>
+                        <Link to="/congrats">賀詞</Link>
                     </li>
                     <li className="text-2xl mr-9 hover:text-white">
-                        <Link to="/">光輝里程</Link>
+                        <Link to="/milestone">光輝里程</Link>
                     </li>
                     <li className="text-2xl text-center">
-                        <div className="hover:text-white">活動日程</div>
+                        <div className="hover:text-white">
+                            <Link to="/events">活動日程</Link>
+                        </div>
                         <ul>
                             <li className="text-xl hover:text-white">6月</li>
                             <li className="text-xl hover:text-white">7月</li>
