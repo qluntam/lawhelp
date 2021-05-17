@@ -1,6 +1,6 @@
 {
   "name": "lawhelp",
-  "homepage": "https://qluntam.github.io/lawhelp",
+  "homepage": "http://www.nicdesignad.com/lad/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,6 +13,7 @@
     "history": "^4.10.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-i18next": "^11.8.15",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.1"

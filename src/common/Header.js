@@ -80,10 +80,10 @@ class Header extends React.Component {
             <div className="head">
                 <div className={`flex flex-row mb-8 justify-between py-4` + (topBar)}>
                     <div className="flex flex-row ml-8">
-                        <div><img src={logolad} alt="LAD" className="object-scale-down h-28 mr-8" /></div>
-                        <div><img src={logoPath} alt="Fifty" className="object-scale-down h-28" /></div>
+                        <div><img src={logolad} alt="LAD" className="object-scale-down h-20 mr-8" /></div>
+                        <div><img src={logoPath} alt="Fifty" className="object-scale-down h-20" /></div>
                     </div>
-                    <div className="text-center mr-4 mt-5">
+                    <div className="text-center mr-4 mt-2">
                         <ul>
                             <li className={`mb-3 px7 text-base` + (langClass)}>English</li>
                             <li className={`px-7 text-base` + (langClass)}>簡體</li>
@@ -110,7 +110,7 @@ class Header extends React.Component {
                                     </Link>
                                 </li>
                                 <li className="my-10 text-lg">
-                                    <Link to="/" onClick={this.showMenu}>
+                                    <Link to="/congrats" onClick={this.showMenu}>
                                     賀詞
                                     </Link>
                                 </li>
@@ -214,7 +214,7 @@ class Header extends React.Component {
                                 }
                             } 
                             >
-                                <Link to="/"
+                                <Link to="/congrats"
                                 
                                 >
                                     <img src={msgIcon} className="object-scale-down w-10 h-10 m-auto" />

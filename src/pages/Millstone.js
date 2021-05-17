@@ -2,7 +2,7 @@ import banner from '../assets/images/banner/directors.png';
 import directorImg from '../assets/images/pages/director.jpg'; 
 import directorTitle from '../assets/images/banner/director-title.png'; 
 
-export default function Director() {
+export default function Millstone() {
     return (
         <div>
             <div className="topBar-nav"></div>
@@ -13,9 +13,9 @@ export default function Director() {
                 <div>
                     <img src={directorImg} className="object-scale-down w-80 m-7" />
                     <div className="ml-16">
-                        鄺寶昌<br />
+                        鄺寶昌 Thomas Edward Kwong <br />
                         法律援助署署長 <br />
-                        
+                        Director of Legal Aid
                     </div>
                 </div>
                 <div className="col-span-2 mt-7 mr-7 mb-7 text-justify">
