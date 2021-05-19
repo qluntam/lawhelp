@@ -7,18 +7,41 @@ import julyTitle from '../assets/images/pages/events/july.png';
 import lineBreak from '../assets/images/pages/events/line-break.png'; 
 import titleBreak from '../assets/images/pages/events/title-break.png'; 
 
+import React, { useRef } from 'react';
+import {
+    useLocation
+} from "react-router-dom";
+
 
 export default function Events() {
+    const jun = useRef(null)
+    const jul = useRef(null)
+
+    const gotoJun = () => jun.current.scrollIntoView()
+    const gotoJul = () => jul.current.scrollIntoView()
+
+    let location = useLocation();
+
+    React.useEffect(() => {
+        
+        if (location.hash == '#jun') {
+            gotoJun();
+        }
+        if (location.hash == '#jul') {
+            gotoJul();
+        }
+    });
+
     return (
         <div>
             <div className="topBar-nav"></div>
             <div className="pattern flex justify-end" style={{ backgroundImage: `url(${pattern})` }}>
-                <div className="sub-banner relative w-9/12" style={{ backgroundImage: `url(${banner})` }}>
+                <div className="relative w-4/5 bg-no-repeat" style={{ backgroundImage: `url(${banner})` }}>
                     <img src={pageTitle} className="object-scale-down w-5/12 absolute bottom-0 left-0 ml-3 mb-3" />
                 </div>
             </div>
             <div className="mb-40">
-                <div className="month mx-24">
+                <div ref={jun} className="month mx-24">
                     <div className="my-10">
                         <img src={juneTitle} className="h-20" />
                     </div>
@@ -113,7 +136,7 @@ export default function Events() {
                 <div className="my-10">
                     <img src={lineBreak} />
                 </div>
-                <div className="month mx-24">
+                <div ref={jul} className="month mx-24">
                     <div className="my-10">
                         <img src={julyTitle} className="h-20" />
                     </div>

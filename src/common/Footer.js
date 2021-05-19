@@ -31,9 +31,10 @@ export default function Footer() {
                             <Link to="/events">活動日程</Link>
                         </div>
                         <ul>
-                            <li className="text-xl hover:text-white">6月</li>
-                            <li className="text-xl hover:text-white">7月</li>
-                            <li className="text-xl hover:text-white">8月</li>
+                            <li className="text-xl hover:text-white">
+                                <Link to="/events#jun">6月</Link>
+                            </li>
+                            <li className="text-xl hover:text-white"><Link to="/events#jul">7月</Link></li>
                         </ul>
                     </li>
                 </ul>

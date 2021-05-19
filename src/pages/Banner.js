@@ -8,9 +8,10 @@ export default function Banner() {
     return (
         <div>
             <Link to="/home">
-                <div className="banner open flex place-items-end h-full bg-cover bg-top" style={{ backgroundImage: `url(${banner})` }}>
-                    <div className="m-auto mr-0 py-20 px-5  w-5/12 slogon">
-                        <img src={slogon} className="object-scale-down w-full ml-auto mr-10" />
+                <div className="relative">
+                    <img src={banner} width="100%" />
+                    <div className="mt-auto ml-auto mb-10 mr-0 py-10 px-10 w-5/12 h-3/5 slogon absolute top-0 left-0 right-0 bottom-0 flex">
+                        <img src={slogon} className="m-auto" />
                     </div>
                 </div>
             </Link>

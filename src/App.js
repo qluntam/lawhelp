@@ -17,10 +17,9 @@ import Events from './pages/Events.js';
 import React from 'react';
 
 function App() {
-
   return (
     <Router basename="/lad">
-      <div className="container mx-auto">
+      <div className="xl:container xl:mx-auto">
           <Switch>
             <Route exact path="/">
             <div className="page">
