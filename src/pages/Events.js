@@ -36,8 +36,8 @@ export default function Events() {
         <div>
             <div className="topBar-nav"></div>
             <div className="pattern flex justify-end" style={{ backgroundImage: `url(${pattern})` }}>
-                <div className="relative w-4/5 bg-no-repeat" style={{ backgroundImage: `url(${banner})` }}>
-                    <img src={pageTitle} className="object-scale-down w-5/12 absolute bottom-0 left-0 ml-3 mb-3" />
+                <div className="relative w-4/5 bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url(${banner})` }}>
+                    <img src={pageTitle} className="object-scale-down w-4/12 absolute bottom-0 left-0 ml-3 mb-3" />
                 </div>
             </div>
             <div className="mb-40">
@@ -84,17 +84,17 @@ export default function Events() {
                                 <div className="times flex items-center mb-4">
                                     <div className="text-5xl font-bold mx-4 w-20">25</div>
                                     <div className="text-base font-bold mx-4 w-20">(FRI)<br />JUN</div>
-                                    <div className="text-xl font-bold mx-4">11:00 - 18:00</div>
+                                    <div className="text-xl font-bold mx-4">10:00 - 18:00</div>
                                 </div>
                                 <div className="times flex items-center mb-4">
                                     <div className="text-5xl font-bold mx-4 w-20">26</div>
                                     <div className="text-base font-bold mx-4 w-20">(SAT)<br />JUN</div>
-                                    <div className="text-xl font-bold mx-4">11:00 - 18:00</div>
+                                    <div className="text-xl font-bold mx-4">10:00 - 18:00</div>
                                 </div>
                                 <div className="times flex items-center mb-4">
                                     <div className="text-5xl font-bold mx-4 w-20">27</div>
                                     <div className="text-base font-bold mx-4 w-20">(SUN)<br />JUN</div>
-                                    <div className="text-xl font-bold mx-4">11:00 - 18:00</div>
+                                    <div className="text-xl font-bold mx-4">10:00 - 18:00</div>
                                 </div>
                             </div>
                         </div>

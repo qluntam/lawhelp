@@ -1,6 +1,6 @@
 import './App.css';
 import {
-  BrowserRouter as Router,
+  HashRouter  as Router,
   Switch,
   Route
 } from "react-router-dom";
@@ -18,7 +18,7 @@ import React from 'react';
 
 function App() {
   return (
-    <Router basename="/lad">
+    <Router>
       <div className="xl:container xl:mx-auto">
           <Switch>
             <Route exact path="/">

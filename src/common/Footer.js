@@ -41,7 +41,7 @@ export default function Footer() {
             </div>
             <div className="copyright-social p-10">
                 <div className="flex flex-row justify-end mb-4 ">
-                    <div><img src={logolad} alt="LAD" className="object-scale-down h-20 mr-8" /></div>
+                    <div><a href="https://www.lad.gov.hk/chi/home/home.html" target="_blank"><img src={logolad} alt="LAD" className="object-scale-down h-20 mr-8" /></a></div>
                     <div><img src={logofiftyWhite} alt="Fifty" className="object-scale-down h-20" /></div>
                 </div>
                 <div className="social-logo flex justify-end">
@@ -56,9 +56,10 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="text-right">
-                    <div className="text-white my-5">CONTACT ME</div>
-                    <div className="text-white my-5">LAD</div>
-                    <div className="text-white">Copyright © xxxxxxxxxxxxx. All rights reserved.</div>
+                    <div className="text-white my-5">
+                        <a href="https://www.lad.gov.hk/chi/home/contact.html" target="_blank">CONTACT ME</a>
+                    </div>
+                    <div className="text-white">Copyright © 2021 Legal Aid Department.<br />All Rights Reserved.</div>
                 </div>
             </div>
         </div>

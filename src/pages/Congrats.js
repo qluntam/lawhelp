@@ -47,8 +47,8 @@ export default function Congrats() {
             <div>
                 <div className="topBar-nav"></div>
                 <div className="pattern flex justify-end" style={{ backgroundImage: `url(${pattern})` }}>
-                    <div className="relative w-4/5 bg-no-repeat" style={{ backgroundImage: `url(${banner})` }}>
-                        <img src={pageTitle} className="object-scale-down w-3/12 absolute bottom-0 left-0 ml-3 mb-3" />
+                    <div className="relative w-4/5 bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url(${banner})` }}>
+                        <img src={pageTitle} className="object-scale-down w-2/12 absolute bottom-0 left-0 ml-3 mb-3" />
                     </div>
                 </div>
                 <div className="grid grid-cols-2 grid-rows-2 gap-4 mx-5">
