@@ -1,6 +1,4 @@
-import fb from '../assets/images/icons/fb.svg';
-import ig from '../assets/images/icons/ig.svg';
-import yt from '../assets/images/icons/yt.svg';
+import fb from '../assets/images/icons/fb.png';
 
 import logolad from '../assets/images/header/logo-lad.png';
 import logofiftyWhite from '../assets/images/header/logo-fifty-white.png';
@@ -8,33 +6,42 @@ import logofiftyWhite from '../assets/images/header/logo-fifty-white.png';
 import {
     Link
 } from "react-router-dom";
+import i18n from '../i18n';
+import { useTranslation, Trans } from "react-i18next";
 
 export default function Footer() {
+
+    let lng = i18n.language;
+    let locale = "/" + lng;
+    const { t } = useTranslation('common');
+    
     return (
         <div className="footer grid  grid-cols-3">
             <div className="sitemap col-span-2 py-10 pl-20 text-fsm">
                 <div className="heading text-2xl font-bold mb-2">
-                    網頁指南
+                    {t('title.sitemap')}
                 </div>
                 <ul className="flex flex-row">
                     <li className="text-2xl mr-9 hover:text-white">
-                        <Link to="/director">署長前言</Link>
+                        <Link to={locale + "/director"}><Trans i18nKey="title.director" ns="common"></Trans></Link>
                     </li>
                     <li className="text-2xl mr-9 hover:text-white">
-                        <Link to="/congrats">賀詞</Link>
+                        <Link to={locale + "/message"}><Trans i18nKey="title.congrats" ns="common"></Trans></Link>
                     </li>
                     <li className="text-2xl mr-9 hover:text-white">
-                        <Link to="/milestone">光輝里程</Link>
+                        <Link to={locale + "/milestone"}><Trans i18nKey="title.milestone" ns="common"></Trans></Link>
                     </li>
                     <li className="text-2xl text-center">
                         <div className="hover:text-white">
-                            <Link to="/events">活動日程</Link>
+                            <Link to={locale + "/events"}><Trans i18nKey="title.events" ns="common"></Trans></Link>
                         </div>
                         <ul>
                             <li className="text-xl hover:text-white">
-                                <Link to="/events#jun">6月</Link>
+                                <Link to={locale + "/events#jun"}>{t('title.month.june')}</Link>
                             </li>
-                            <li className="text-xl hover:text-white"><Link to="/events#jul">7月</Link></li>
+                            <li className="text-xl hover:text-white">
+                                <Link to={locale + "/events#jul"}>{t('title.month.july')}</Link>
+                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -46,18 +53,14 @@ export default function Footer() {
                 </div>
                 <div className="social-logo flex justify-end">
                     <div className="fb-logo mr-2">
-                        <img src={fb} alt="Facebook" width="30" />
-                    </div>
-                    <div className="ig-logo mr-2">
-                        <img src={ig} alt="Instagram" width="30" />
-                    </div>
-                    <div className="yt-logo">
-                        <img src={yt} alt="Youtube" width="30" />
+                        <a href="https://www.facebook.com/%E6%B3%95%E6%8F%B4%E4%BA%94%E5%8D%81%E5%B9%B4-107772427788771" target="_blank">
+                            <img src={fb} alt="Facebook 法援五十年" className="w-28" />
+                        </a>
                     </div>
                 </div>
                 <div className="text-right">
                     <div className="text-white my-5">
-                        <a href="https://www.lad.gov.hk/chi/home/contact.html" target="_blank">CONTACT ME</a>
+                        <a href={t('title.contactusURL')} target="_blank">{t('title.contactus')}</a>
                     </div>
                     <div className="text-white">Copyright © 2021 Legal Aid Department.<br />All Rights Reserved.</div>
                 </div>

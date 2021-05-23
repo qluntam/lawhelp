@@ -22,6 +22,7 @@ import {
     Link
 } from "react-router-dom";
 
+import { useTranslation, Trans } from "react-i18next";
 
 class Header extends React.Component {
     constructor(props) {
@@ -39,10 +40,6 @@ class Header extends React.Component {
       // This binding is necessary to make `this` work in the callback
       this.showMenu = this.showMenu.bind(this);
       //this.changeLook = this.changeLook.bind(this);
-
-      //console.log(this.props.type);
-
-      
       
     }
 
@@ -60,6 +57,8 @@ class Header extends React.Component {
         const {navLayer, navIcon,homepageIcon, directorIcon, msgIcon, milestoneIcon, calIcon
         } = this.state;
 
+        let locale = this.props.locale;
+
         let langClass = ' text-primary hover:text-lang-bar';
         let openingHide = '';
         let logoPath = logofifty;
@@ -75,6 +74,26 @@ class Header extends React.Component {
             openingHide =  ' hidden';
             logoPath = logofiftyWhite;
         }
+
+        let enHide = ''; let tcHide = ''; let scHide = ''; 
+
+        if (locale == 'en') {
+            enHide = ' hidden';
+            tcHide = '';
+            scHide = '';
+        }
+
+        if (locale == 'tc') {
+            enHide = '';
+            tcHide = ' hidden';
+            scHide = '';
+        }
+
+        if (locale == 'sc') {
+            enHide = '';
+            tcHide = '';
+            scHide = ' hidden';
+        }
         
         return (
             <div className="head">
@@ -85,8 +104,15 @@ class Header extends React.Component {
                     </div>
                     <div className="text-center mr-4 mt-2">
                         <ul>
-                            <li className={`mb-3 px7 text-base` + (langClass)}>English</li>
-                            <li className={`px-7 text-base` + (langClass)}>簡體</li>
+                            <li className={`mb-3 px7 text-base` + (langClass) + (enHide)}>
+                                <Link to={`/en` + this.props.location}>English</Link>
+                            </li>
+                            <li className={`mb-3 px-7 text-base` + (langClass) + (tcHide)}>
+                                <Link to={`/tc` + this.props.location}>䌓體</Link>
+                            </li>
+                            <li className={`px-7 text-base` + (langClass) + (scHide)}>
+                                <Link to={`/sc` + this.props.location}>简体</Link>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -100,28 +126,28 @@ class Header extends React.Component {
                                     </div>
                                 </li>
                                 <li className="my-10 text-lg">
-                                    <Link to="/home"  onClick={this.showMenu}>
-                                    首頁
+                                    <Link to={"/" + locale + "/home"}  onClick={this.showMenu}>
+                                        <Trans i18nKey="title.homepage" ns="common"></Trans>
                                     </Link>
                                 </li>
                                 <li className="my-10 text-lg">
-                                    <Link to="/director" onClick={this.showMenu}>
-                                    署長前言
+                                    <Link to={"/" + locale + "/director"} onClick={this.showMenu}>
+                                        <Trans i18nKey="title.director" ns="common"></Trans>
                                     </Link>
                                 </li>
                                 <li className="my-10 text-lg">
-                                    <Link to="/congrats" onClick={this.showMenu}>
-                                    賀詞
+                                    <Link to={"/" + locale + "/message"} onClick={this.showMenu}>
+                                        <Trans i18nKey="title.congrats" ns="common"></Trans>
                                     </Link>
                                 </li>
                                 <li className="my-10 text-lg">
-                                    <Link to="/milestone" onClick={this.showMenu}>
-                                    光輝里程
+                                    <Link to={"/" + locale + "/milestone"} onClick={this.showMenu}>
+                                        <Trans i18nKey="title.milestone" ns="common"></Trans>
                                     </Link>
                                 </li>
                                 <li className="my-10 text-lg">
-                                    <Link to="/events" onClick={this.showMenu}>
-                                    活動日程
+                                    <Link to={"/" + locale + "/events"} onClick={this.showMenu}>
+                                        <Trans i18nKey="title.events" ns="common"></Trans>
                                     </Link>
                                 </li>
                             </ul>
@@ -150,7 +176,7 @@ class Header extends React.Component {
                                 >
                                     <img src={navIcon} className="object-scale-down w-10 h-10 m-auto" />
                                 </div>
-                                <div className="nav-tips text-fsm">Menu</div>
+                                <div className="nav-tips text-fsm"><Trans i18nKey="title.menu" ns="common"></Trans></div>
                             </li>
                             <li className="nav-now rounded-full h-14 w-14 bg-white flex justify-center items-center mb-3 shadow-xl"
                             onMouseEnter={
@@ -168,12 +194,12 @@ class Header extends React.Component {
                                 }
                             } 
                             >
-                                <Link to="/home"
+                                <Link to={"/" + locale + "/home"}
                                 
                                 >
                                     <img src={homepageIcon} className="object-scale-down w-10 h-10 m-auto" />
                                 </Link>
-                                <div className="nav-tips text-fsm">首頁</div>
+                                <div className="nav-tips text-fsm"><Trans i18nKey="title.homepage" ns="common"></Trans></div>
                             </li>
                             <li className="nav-now rounded-full h-14 w-14 bg-white flex justify-center  items-center mb-3 shadow-xl"
                             onMouseEnter={
@@ -191,12 +217,12 @@ class Header extends React.Component {
                                 }
                             } 
                             >
-                                <Link to="/director"
+                                <Link to={"/" + locale + "/director"}
                                 
                                 >
                                     <img src={directorIcon} className="object-scale-down w-10 h-10 m-auto" />
                                 </Link>
-                                <div className="nav-tips text-fsm">署長前言</div>
+                                <div className="nav-tips text-fsm"><Trans i18nKey="title.director" ns="common"></Trans></div>
                             </li>
                             <li className="nav-now rounded-full h-14 w-14 bg-white flex justify-center  items-center mb-3 shadow-xl"
                             onMouseEnter={
@@ -214,12 +240,12 @@ class Header extends React.Component {
                                 }
                             } 
                             >
-                                <Link to="/congrats"
+                                <Link to={"/" + locale + "/message"}
                                 
                                 >
                                     <img src={msgIcon} className="object-scale-down w-10 h-10 m-auto" />
                                 </Link>
-                                <div className="nav-tips text-fsm">賀詞</div>
+                                <div className="nav-tips text-fsm"><Trans i18nKey="title.congrats" ns="common"></Trans></div>
                             </li>
                             <li className="nav-now rounded-full h-14 w-14 bg-white flex justify-center  items-center mb-3 shadow-xl"
                             onMouseEnter={
@@ -237,10 +263,10 @@ class Header extends React.Component {
                                 }
                             } 
                             >
-                                <Link to="/milestone">
+                                <Link to={"/" + locale + "/milestone"}>
                                     <img src={milestoneIcon} className="object-scale-down w-10 h-10 m-auto" />
                                 </Link>
-                                <div className="nav-tips text-fsm">光輝里程</div>
+                                <div className="nav-tips text-fsm"><Trans i18nKey="title.milestone" ns="common"></Trans></div>
                             </li>
                             <li className="nav-now rounded-full h-14 w-14 bg-white flex justify-center  items-center mb-3 shadow-xl"
                             onMouseEnter={
@@ -259,10 +285,10 @@ class Header extends React.Component {
                             }
                             >
                                 
-                                <Link to="/events">
+                                <Link to={"/" + locale + "/events"}>
                                     <img src={calIcon} className="object-scale-down w-10 h-10 m-auto" />
                                 </Link>
-                                <div className="nav-tips text-fsm">活動日程</div>
+                                <div className="nav-tips text-fsm"><Trans i18nKey="title.events" ns="common"></Trans></div>
                             </li>
                         </ul>
                     </nav>

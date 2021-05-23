@@ -89,14 +89,13 @@ body, html {
 .nav-now .nav-tips {
   position: absolute;
   display: none;
-  padding: 10px 20px;
+  padding: 10px 15px;
   background-color: #ffffff;
-  margin-left: 185px;
   white-space: nowrap;
-  width: 120px;
   text-align: center;
   -webkit-box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.6); 
   box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.6);
+  left:62px;
 }
 .nav-now:hover {
   background-color:#00446F;

@@ -1,6 +1,8 @@
 import pattern from '../assets/images/banner/banner_pattern.png';
 import banner from '../assets/images/banner/milestone.jpg';
-import pageTitle from '../assets/images/banner/milestone-title.png'; 
+import pageTitleTC from '../assets/images/banner/tc/milestone-title.png';
+import pageTitleSC from '../assets/images/banner/sc/milestone-title.png';
+import pageTitleEN from '../assets/images/banner/en/milestone-title.png'; 
 
 import btn1960 from '../assets/images/pages/milestone/btn1960.png'
 import btn1970 from '../assets/images/pages/milestone/btn1970.png'
@@ -37,7 +39,7 @@ import Img201203 from '../assets/images/pages/milestone/2012.03.jpg'
 import Img2015 from '../assets/images/pages/milestone/2015.jpg'
 
 import React, { useRef } from 'react';
-
+import { useTranslation, Trans } from "react-i18next";
 
 export default function Milestone() {
     const y1960 = useRef(null)
@@ -54,13 +56,31 @@ export default function Milestone() {
     const btnY2000 = () => y2000.current.scrollIntoView()
     const btnY2010 = () => y2010.current.scrollIntoView()
 
+    const { t, i18n } = useTranslation('milestone');
+
+    let pageTitle, titleClass;
+    switch(i18n.language) {
+        case "tc":
+            pageTitle = pageTitleTC;
+            titleClass = ' w-4/12';
+            break;
+        case "sc":
+            pageTitle = pageTitleSC;
+            titleClass = ' w-4/12';
+            break;
+        case "en":
+            pageTitle = pageTitleEN;
+            titleClass = ' w-5/12';
+            break;
+    }
+
     const Milestone = () => {
     return (
         <div>
             <div className="topBar-nav"></div>
             <div className="pattern flex justify-end" style={{ backgroundImage: `url(${pattern})` }}>
                 <div className="relative w-4/5 bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url(${banner})` }}>
-                    <img src={pageTitle} className="object-scale-down w-4/12 absolute bottom-0 left-0 ml-3 mb-3" />
+                    <img src={pageTitle} className={"object-scale-down absolute bottom-0 left-0 ml-3 mb-3" + titleClass} />
                 </div>
             </div>
             <div className="grid grid-cols-7">
@@ -86,13 +106,11 @@ export default function Milestone() {
                                         11.23
                                     </div>
                                     <div className="text-2xl">
-                                        《法律援助條例》
+                                        {t('timelines.timeline1.title')}
                                     </div>
                                 </div>
                                 <div className="content text-justify">
-                                    《法律援助條例》通過，除襲擊和毆打案件外，法援計劃涵蓋幾乎所有在
-                                    合議庭、最高法院及地方法院審理的民事訴訟。法援計劃並沒有為經費設
-                                    定預算上限，申請者須接受案情審查和經濟審查。
+                                    {t('timelines.timeline1.content')}
                                 </div>
                             </div>
                             <div>
@@ -107,11 +125,11 @@ export default function Milestone() {
                                         01.12
                                     </div>
                                     <div className="text-2xl">
-                                    法援計劃投入運作
+                                        {t('timelines.timeline2.title')}
                                     </div>
                                 </div>
                                 <div className="content text-justify">
-                                    在司法機構開設一個名為法律援助組的附屬部門，標誌著法律援助計劃正式投入運作。
+                                    {t('timelines.timeline2.content')}
                                 </div>
                             </div>
                             <div>
@@ -131,11 +149,11 @@ export default function Milestone() {
                                         07.01
                                     </div>
                                     <div className="text-2xl">
-                                    正式成立
+                                    {t('timelines.timeline3.title')}
                                     </div>
                                 </div>
                                 <div className="content text-justify">
-                                    法律援助署(法援署)正式成立，並遷往位於 炮台里、俗稱「紅磚屋」的前法國外方傳道會 大樓。 
+                                {t('timelines.timeline3.content')}
                                 </div>
                             </div>
                             <div>
@@ -149,11 +167,11 @@ export default function Milestone() {
                                         1973
                                     </div>
                                     <div className="text-2xl">
-                                    訴訟組成立
+                                    {t('timelines.timeline4.title')}
                                     </div>
                                 </div>
                                 <div className="content text-justify">
-                                成立訴訟組，並於德己立街設立臨時辦事處。 
+                                {t('timelines.timeline4.content')}
                                 </div>
                             </div>
                             <div>
@@ -167,11 +185,11 @@ export default function Milestone() {
                                         1978
                                     </div>
                                     <div className="text-2xl">
-                                    設立九龍分署
+                                    {t('timelines.timeline5.title')}
                                     </div>
                                 </div>
                                 <div className="content text-justify">
-                                法援署於旺角彌敦道麗斯大厦設立分署，在接收和處理民事法援申請方面，為申請者提供方便的選擇。九龍分署於1991年遷往旺角政府合署現址。
+                                {t('timelines.timeline5.content')}
                                 </div>
                             </div>
                             <div>
@@ -186,11 +204,11 @@ export default function Milestone() {
                                         04.01
                                     </div>
                                     <div className="text-2xl">
-                                    擴大刑事法援範圍
+                                    {t('timelines.timeline6.title')}
                                     </div>
                                 </div>
                                 <div className="content text-justify">
-                                修訂《刑事案件法律援助規則》，所有於地方法院審訊的刑事案件均列入法援範圍。
+                                {t('timelines.timeline6.content')}
                                 </div>
                             </div>
                             <div>
@@ -210,11 +228,11 @@ export default function Milestone() {
                                         04.23
                                     </div>
                                     <div className="text-2xl">
-                                    涵蓋樞密院
+                                    {t('timelines.timeline7.title')}
                                     </div>
                                 </div>
                                 <div className="content text-justify">
-                                法律援助擴大至涵蓋上訴到英國樞密院的案件。 
+                                {t('timelines.timeline7.content')}
                                 </div>
                             </div>
                             <div>
@@ -229,11 +247,11 @@ export default function Milestone() {
                                         01.01
                                     </div>
                                     <div className="text-2xl">
-                                        擴大刑事法援 
+                                    {t('timelines.timeline8.title')} 
                                     </div>
                                 </div>
                                 <div className="content text-justify">
-                                刑事法援擴大至包括在裁判司署進行的交付審判程序。
+                                {t('timelines.timeline8.content')}
                                 </div>
                             </div>
                             <div>
@@ -249,11 +267,11 @@ export default function Milestone() {
                                         10.01
                                     </div>
                                     <div className="text-2xl">
-                                        法律援助輔助計劃 
+                                    {t('timelines.timeline9.title')} 
                                     </div>
                                 </div>
                                 <div className="content text-justify">
-                                    推行法律援助輔助計劃，為未能通過經濟審查但有合理理據提出申索，而財政資源又未能負擔高昂訴訟費用的人士提供協助。該計劃為全球首個以訴訟結果決定收費的法律援助計劃，並於1990年代轉為自負盈虧營運。 
+                                {t('timelines.timeline9.content')}
                                 </div>
                             </div>
                             <div>
@@ -275,11 +293,11 @@ export default function Milestone() {
                                         08.01
                                     </div>
                                     <div className="text-2xl">
-                                        法定代表律師條例
+                                    {t('timelines.timeline10.title')} 
                                     </div>
                                 </div>
                                 <div className="content text-justify">
-                                《法定代表律師條例》通過，由法律援助署署長出任首位法定代表律師，在訴訟中代表法律上無行為能力(即未滿18歲或精神上無行為能力)的人士的利益。 
+                                {t('timelines.timeline10.content')}
                                 </div>
                             </div>
                             <div>
@@ -294,11 +312,11 @@ export default function Milestone() {
                                         07.01
                                     </div>
                                     <div className="text-2xl">
-                                    更公平機制
+                                    {t('timelines.timeline11.title')} 
                                     </div>
                                 </div>
                                 <div className="content text-justify">
-                                《1991年法律援助(修訂)條例》生效，以「經濟能力」作為經濟審查的單一準則，取代以可動用收入和可動用資產作為審查標準，為只有入息或只有資產的申請者提供更公平的審查機制。
+                                {t('timelines.timeline11.content')}
                                 </div>
                             </div>
                             <div>
@@ -313,11 +331,11 @@ export default function Milestone() {
                                         07.28
                                     </div>
                                     <div className="text-2xl">
-                                    進一步支援
+                                    {t('timelines.timeline12.title')}
                                     </div>
                                 </div>
                                 <div className="content text-justify">
-                                《1995年法律援助(修訂)條例》生效，若申請者依據《香港人權法案條例》和《公民權利和政治權利國際公約》適用於香港的規定而提出合理理據的申索，法援署署長可酌情免除其財務資源審查的限額。 
+                                {t('timelines.timeline12.content')}
                                 </div>
                             </div>
                             <div>
@@ -332,11 +350,11 @@ export default function Milestone() {
                                         09.01
                                     </div>
                                     <div className="text-2xl">
-                                    法律援助服務局
+                                    {t('timelines.timeline13.title')}
                                     </div>
                                 </div>
                                 <div className="content text-justify">
-                                法律援助服務局正式成立，負責監管由法律援助署提供的法律援助服務，並就法律援助政策向政府提供意見。 
+                                {t('timelines.timeline13.content')}
                                 </div>
                             </div>
                             <div>
@@ -351,11 +369,11 @@ export default function Milestone() {
                                         10
                                     </div>
                                     <div className="text-2xl">
-                                    法援署網頁
+                                    {t('timelines.timeline14.title')}
                                     </div>
                                 </div>
                                 <div className="content text-justify">
-                                推出網頁，方便公眾於網上獲得法援署的資訊。  
+                                {t('timelines.timeline14.content')}
                                 </div>
                             </div>
                             <div>
@@ -370,11 +388,11 @@ export default function Milestone() {
                                         11
                                     </div>
                                     <div className="text-2xl">
-                                    服務承諾
+                                    {t('timelines.timeline15.title')}
                                     </div>
                                 </div>
                                 <div className="content text-justify">
-                                公布審批申請所需時間的服務承諾，同年亦發表「抱負、使命及信念」的聲明。其後，於1999年進一步公布有關付款安排的服務承 諾。
+                                {t('timelines.timeline15.content')}
                                 </div>
                             </div>
                             <div>
@@ -389,11 +407,11 @@ export default function Milestone() {
                                         10
                                     </div>
                                     <div className="text-2xl">
-                                    全新小冊子
+                                    {t('timelines.timeline16.title')}
                                     </div>
                                 </div>
                                 <div className="content text-justify">
-                                出版《香港法律援助服務指南》小冊子。
+                                {t('timelines.timeline16.content')}
                                 </div>
                             </div>
                             <div>
@@ -408,11 +426,11 @@ export default function Milestone() {
                                         10
                                     </div>
                                     <div className="text-2xl">
-                                    加強公眾認識
+                                    {t('timelines.timeline17.title')}
                                     </div>
                                 </div>
                                 <div className="content text-justify">
-                                推出題材廣泛的小冊子，以加強公眾對法援署服務的認識，包括怎樣申請法援、法律援助訴訟的分擔費及法援署署長的第一押記。
+                                {t('timelines.timeline17.content')}
                                 </div>
                             </div>
                             <div className="flex">
@@ -433,11 +451,11 @@ export default function Milestone() {
                                         03
                                     </div>
                                     <div className="text-2xl">
-                                    調解試驗計劃
+                                    {t('timelines.timeline18.title')}
                                     </div>
                                 </div>
                                 <div className="content text-justify">
-                                推行「法援婚姻訴訟個案家事調解試驗計劃」。
+                                {t('timelines.timeline18.content')}
                                 </div>
                             </div>
                             <div>
@@ -451,11 +469,11 @@ export default function Milestone() {
                                         2006
                                     </div>
                                     <div className="text-2xl">
-                                    市場機制
+                                    {t('timelines.timeline19.title')}
                                     </div>
                                 </div>
                                 <div className="content text-justify">
-                                根據《法律援助(財產的押記)(利率) 規例》，法援署署長第一押記的利率每 年會隨市場走勢而變動，而非如以往般 把年息率固定為10%。 
+                                {t('timelines.timeline19.content')}
                                 </div>
                             </div>
                             <div>
@@ -469,11 +487,11 @@ export default function Milestone() {
                                         2008 
                                     </div>
                                     <div className="text-2xl">
-                                    關注不同族裔的需要
+                                    {t('timelines.timeline20.title')}
                                     </div>
                                 </div>
                                 <div className="content text-justify">
-                                出版不同族裔語言的法律援助服務小冊子。
+                                {t('timelines.timeline20.content')}
                                 </div>
                             </div>
                             <div className="flex">
@@ -489,11 +507,11 @@ export default function Milestone() {
                                         2008 
                                     </div>
                                     <div className="text-2xl">
-                                    網上預辦申請
+                                    {t('timelines.timeline21.title')}
                                     </div>
                                 </div>
                                 <div className="content text-justify">
-                                推出法律援助電子服務入門網站，供申 請者於網上提交預辦申請所需資料。 
+                                {t('timelines.timeline21.content')}
                                 </div>
                             </div>
                             <div>
@@ -515,11 +533,11 @@ export default function Milestone() {
                                         05.18
                                     </div>
                                     <div className="text-2xl">
-                                    提高限額
+                                    {t('timelines.timeline22.title')}
                                     </div>
                                 </div>
                                 <div className="content text-justify">
-                                普通法律援助計劃的財務資格限額由 175,800港元調高至260,000港元; 法律援助輔助計劃的財務資格限額，則由 488,400港元調高至1,300,000港元。
+                                {t('timelines.timeline22.content')}
                                 </div>
                             </div>
                             <div>
@@ -533,11 +551,11 @@ export default function Milestone() {
                                     2012 
                                     </div>
                                     <div className="text-2xl">
-                                    擴大專業疏忽申索的範圍
+                                    {t('timelines.timeline23.title')}
                                     </div>
                                 </div>
                                 <div className="content text-justify">
-                                擴大法律援助輔助計劃範圍，新增8項專業疏 忽的申索、保險人或其中介人在銷售個人保 險產品時涉及疏忽的申索、就售賣一手住宅 物業向賣方提出的金錢申索、以及在針對勞 資審裁處所作裁決而提出的上訴中，為僱員 提供法律代表。 
+                                {t('timelines.timeline23.content')}
                                 </div>
                             </div>
                             <div>
@@ -552,11 +570,11 @@ export default function Milestone() {
                                         03
                                     </div>
                                     <div className="text-2xl">
-                                    改善刑事法律援助的付費結構
+                                    {t('timelines.timeline24.title')}
                                     </div>
                                 </div>
                                 <div className="content text-justify">
-                                改善刑事法律援助的付費結構，包括律師聆訊前的工作按 時計酬，以及會議費用按時數付予律師。此外，個別案件 的分類和相關費用，以及所需準備時間，會經事先評估， 並在外判個案時註明報聘費。 
+                                {t('timelines.timeline24.content')}
                                 </div>
                             </div>
                             <div>
@@ -570,11 +588,11 @@ export default function Milestone() {
                                         2015
                                     </div>
                                     <div className="text-2xl">
-                                    更多繳款方式 
+                                    {t('timelines.timeline25.title')} 
                                     </div>
                                 </div>
                                 <div className="content text-justify">
-                                受助人和公眾可使用自動櫃員機提款卡或信 用卡在自動櫃員機向法援署繳付款項，或使 用網上銀行服務繳款，能讓受助人和公眾 更方便地繳付款項。 
+                                {t('timelines.timeline25.content')}
                                 </div>
                             </div>
                             <div>
@@ -588,11 +606,11 @@ export default function Milestone() {
                                         2018
                                     </div>
                                     <div className="text-2xl">
-                                    加強電子通訊 
+                                    {t('timelines.timeline26.title')} 
                                     </div>
                                 </div>
                                 <div className="content text-justify">
-                                推出電子預約系統，讓公眾可通過本署網頁進 入法律援助電子服務入門網站，預約索取與申 請有關的表格及文件。由2019年起，電子預 約系統更可支援流動裝置。 
+                                {t('timelines.timeline26.content')}
                                 </div>
                             </div>
                             <div>

@@ -1,0 +1,161 @@
+{
+    "common":{
+      "title":{
+        "menu":"Menu",
+        "homepage":"Home",
+        "director":"Director’s Preview",
+        "congrats":"Message",
+        "milestone":"Milestone",
+        "events":"Event Calendar",
+        "contactus":"Contact Us",
+        "contactusURL":"https://www.lad.gov.hk/eng/home/contact.html",
+        "sitemap":"Sitemap",
+        "month":{
+          "june":"June",
+          "july":"July"
+        }
+      }
+    },
+    "director":{
+      "name":"Thomas Edward Kwong",
+      "title":"Director of Legal Aid",
+      "word":"<1 className=\"mb-4\">We publicised a commemorative publication “Access to Justice” in 2000 to mark the 30th Anniversary of the Department. Riding on the solid foundation laid by our predecessors, we continue to expand and enhance the legal aid services by upholding our mission that no one who qualifies for legal aid is denied access to justice because of a lack of means. It is heartening to see that the Department has been growing robustly with the community amidst all the changes and challenges.</1>\n          <2 className=\"mb-4\">Hong Kong has been developing in a sheer speed in the past 20 years. To be in tune with the pace of the community, apart from initiating reviews on the scope of our service and work process, we also introduce technology and new elements into our work. On the overall provision of legal aid services, we are very pleased to have the scope of the Ordinary Legal Aid Scheme (OLAS) and Supplementary Legal Aid Scheme (SLAS) expanded to cover more types of proceedings. Today we handle over 15,000 civil legal aid applications and over 3,000 criminal legal aid applications in a year, most of which are complicated and have far-reaching effect. We also conduct reviews on the criteria for assessing the financial eligibility of legal aid applicants and on the financial eligibility limit (FEL) from time to time. As one of the initiatives in the 2019 Policy Address, we have sought to further increase the FEL. As from 26 June 2020, the FELs of the OLAS and SLAS have increased to HK$420,400 and HK$2,102,000 respectively. </2>\n          <3 className=\"mb-4\">We always attach great importance to the provision of quality customer service to the general public. With the benefit of advance technology, we have invested our efforts and resources to improve our service with successful results through innovative ways. In the past two decades, we introduced a number of new services which included the Legal Aid Electronic Services Portal for the public to submit pre-application information online and for legal practitioners to submit legal aid case reports through the system, Means Tests Calculator on our website as a guide for the public to have a preliminary understanding of their financial eligibility for legal aid, Phone Payment Service, Automated Teller Machine and internet banking to afford greater convenience to the public in making payment, QR codes to enable instant and easy access via mobile devices to our leaflets, electronic appointment system for intended legal aid applicants to make appointment to obtain different types of application-related forms and documents through our website. To provide a more comfortable environment for our applicants, we have upgraded our waiting areas as well as the interview rooms in the Headquarters and the Kowloon Branch Office. It is also encouraging to know that our efforts and determination to provide quality service have earned the recognition from the community. We were selected for the Grand Award of The Ombudsman’s Awards for Public Organisations in 2009 and 2016 respectively and the Award of The Ombudsman’s Awards for Public Organisations in 2015. The Department was also awarded a Special Citation (Workplace Safety and Wellness) and Bronze Prize in Departmental Service Enhancement Award (Small Department Category) under the Civil Service Outstanding Service Award Scheme 2019 in recognition of our efforts.</3>\n          <4 className=\"mb-4\">A transparent and impartial legal aid system plays a significant role in upholding the rule of law. In all these years, we value the opportunities to meet with the Legal Aid Services Council (LASC), Legislative Council, legal profession, stakeholders, non-governmental organisations and the public through different channels and activities. The fruitful exchange of views helps foster mutual understanding and provide insight for our continuous improvement.</4>\n          <5 className=\"mb-4\">The legal aid portfolio was transferred from the Office of the Chief Secretary for Administration (CS) to the Home Affairs Bureau in July 2007. Since July 2018, on the recommendation of LASC after a recent consultancy study, the Department has been re-positioned and made directly accountable to CS. Whatever the change has been and will be, the Director of Legal Aid has endeavoured to exercise the statutory functions in an impartial, transparent and accountable manner. The established independence in the delivery of legal aid services will never be affected. </5>\n          <6 className=\"mb-4\">Over the years, our dedicated staff members have worked with efficiency and professionalism, coupled with a strong sense of mission to serve the community. I hope this publication will, not only serve as a recollection of the contributions the Department made in the past half century, but also help inspire our readers that legal aid is indispensable to the course of justice and, by delivering quality legal aid services, the Department maintains the role as a cornerstone of the rule of law in Hong Kong. </6>\n          "
+    },
+    "congrats":{
+      "clword":"<1 className=\"mb-5\">I am pleased to congratulate the Legal Aid Department on its Golden Jubilee, a half century of critical contributions to Hong Kong and the rule of law, which has been so central to our longstanding success as an international economy and community.</1><2 className=\"mb-5\">Hong Kong’s legal aid system is among the most comprehensive and well-regarded in the world. Over the past 50 years, it has assisted more than 420 000 people in their pursuit of justice, ensuring that no one is denied access to justice because of a lack of means. In response to changing needs, the scope of services has been expanded and the financial eligibility limit for legal aid raised over the years, I am pleased to add. Not surprisingly, the satisfaction rate for legal aid services in Hong Kong has remained consistently high. </2><3 className=\"mb-5\">In celebration of its 50th Anniversary, the Department has organised a roving exhibition on the history and development of legal aid in Hong Kong, including prominent court decisions and how they have influenced government policies and the community at large. In addition, a six-part TV documentary will feature legal aid cases that will showcase the development of law in Hong Kong. </3><4 className=\"mb-5\">The Department, of course, works closely with the Judiciary and Legal Aid Services Council, as well as a host of professional bodies and other stakeholders, in ensuring that the rule of law remains fundamental to Hong Kong. </4><5 className=\"mb-5\">Once again, my congratulations to the Legal Aid Department on reaching this significant milestone. I am confident that the Department and its talented professionals will continue to serve Hong Kong with pride, dedication and honour over the next 50 years. </5>\n          ",
+      "gmword":"<1 className=\"mb-5\">Fifty years ago, the Legal Aid Department began providing legal aid services in Hong Kong. This exemplified two characteristics of Hong Kong at that time which continue through to today: a relatively affluent society that could afford to provide essential social services and the recognition that access to justice was an essential component of the system of justice here. One of the primary functions of the Basic Law was the continuation of those institutions that had served Hong Kong well and which would help ensure the success of Hong Kong in the future. One such institution was the continuation of the system of law. Among the numerous provisions in the Basic Law relating to this aspect was Article 35 which specifically refers to \"access to the courts\". This term is usually now referred to as access to justice and in Article 35, it is mentioned alongside confidential legal advice, the existence of lawyers providing timely protection of rights, representation in the courts and also the right to institute legal proceedings against the acts of the executive authorities. All this is synonymous with the Legal Aid Department and the many functions it fulfils. It is one of the clearest manifestations of the attainment of the requirements of Article 35. The effectiveness of any system of law is measured by the quality of justice that is delivered. With a proper system of legal aid in place, a society becomes much richer for it and one that is significantly more just. </1><2 className=\"mb-5\">I congratulate the Legal Aid Department in reaching this important milestone and expect it to go from strength to strength in the many years to come. </2>",
+      "mcword":"<1 className=\"mb-5\">I congratulate the Legal Aid Department in reaching this important milestone and expect it to go from strength to strength in the many years to come. </1><2 className=\"mb-5\">The Hong Kong Special Administrative Region Government attaches great importance to upholding the rule of law in Hong Kong. Legal aid is an integral part of the legal system in Hong Kong that seeks to ensure that those in need of legal assistance will not be denied access to justice owing to lack of means. </2><3 className=\"mb-5\">The legal aid system in Hong Kong has been ranked as one of the most comprehensive, well-established and adequately funded systems in the world. The Legal Aid Department has all along been playing a vital role in upholding the rule of law and justice in Hong Kong. Since its establishment in 1970, the Department has been committed to providing reliable and quality legal aid services to persons with reasonable grounds for pursuing or defending legal action, with a view to ensuring that they would not be deprived of justice because of financial constraints. </3><4 className=\"mb-5\">Over the past 50 years, the Department has been moving with the times and continuously expanding its scope of services. These include extending the coverage of civil and criminal legal aid, as well as launching the Ordinary Legal Aid Scheme and the Supplementary Legal Aid Scheme. An annual average of over 8 000 people benefit from the legal aid services. Among the criminal court cases in Hong Kong, over 80 percent of defendants are granted with legal aid. </4><5 className=\"mb-5\">Looking ahead, I am confident that the Department will continue to work closely with all quarters of society to maintain an efficient and effective legal aid system in Hong Kong. </5><6 className=\"mb-5\">On this joyous occasion of the Department’s Golden Jubilee, I would like to express my sincere gratitude to all members of its staff for their relentless effort in serving Hong Kong people over the years. I also wish the Department continuous success in serving Hong Kong in the years ahead. </6>",
+      "wlword":"<1 className=\"mb-5\">I would like to extend my warmest congratulations to the Legal Aid Department of the Government of the Hong Kong Special Administrative Region on the occasion of its 50th anniversary. </1><2 className=\"mb-5\">Since its establishment in 1970, the Legal Aid Department has assumed an important role in providing access to justice for people of limited means. It has been making unfaltering efforts in enhancing its services to meet the evolving needs of the community. Apart from expanding the coverage of legal aid services, it is encouraging to see that the department has also developed various electronic systems to promote legal aid services, facilitate intended legal aid applicants in submitting pre-application information, and to speed up the processing of legal aid applications. That growth would not have been possible without the dedicated service by colleagues of the department. </2><3 className=\"mb-5\">I sincerely wish the Legal Aid Department every success in the next 50 years and beyond. The Council will certainly continue to work hand in hand with the department in ensuring the accessibility of legal aid services to the public to contribute towards upholding and enhancing the rule of law in Hong Kong. </3>"
+    },
+    "events":{
+      "june":{
+        "event1":{
+          "title":"Legal Aid Department 50th Anniversary Roving Exhibition - First Exhibition",
+          "venue":"Exhibition Hall, Low Block, Hong Kong City Hall"
+        },
+        "event2":{
+          "title":"Legal Aid Department 50th Anniversary Roving Exhibition - Second Exhibition",
+          "venue":"Atrium, Domain Mall, Yau Tong"
+        },
+        "event3":{
+          "title":"Premiere of \"Legal Aid - a Gateway to Justice\""
+        },
+        "event4":{
+          "title":"Broadcast of \"Legal Aid - a Gateway to Justice\""
+        }
+      },
+      "july":{
+        "event1":{
+          "title":"Broadcast of \"Legal Aid - a Gateway to Justice\""
+        }
+      }
+    },
+    "milestone":{
+        "timelines":{
+            "timeline1": {
+                "title":"Legal Aid Ordinance",
+                "content":"Legal Aid Ordinance was passed, which sought to make legal aid available in all civil proceedings in the Full Court, Supreme Court and the District Court, except for assault and battery. There was no cap on the legal aid budget and the granting of legal aid is subject to a means test and a merits test."
+            },
+            "timeline2": {
+                "title":"Legal Aid Scheme Came into Operation",
+                "content":"Legal aid scheme came into operation when a sub-department of the Judiciary called the Legal Aid Section was set up within the Judiciary."
+            },
+            "timeline3": {
+                "title":"Establishment",
+                "content":"The Legal Aid Department (LAD) was established and moved to the old French Mission building on Battery Path, nicknamed the \"Red Brick Building\"."
+            },
+            "timeline4": {
+                "title":"Litigation Unit",
+                "content":"Litigation Unit of LAD was set up and occupied temporary quarters in D’Aguilar Street."
+            },
+            "timeline5": {
+                "title":"Kowloon Branch Office Established",
+                "content":"LAD established a branch office at Ritz Building, Nathan Road, Kowloon as a convenient alternative for receiving and handling civil legal aid applications. In 1991, the Kowloon Branch Office moved to its present location at Mongkok Government Offices."
+            },
+            "timeline6": {
+                "title":"Widening Coverage of Criminal Legal Aid",
+                "content":"Legal Aid in Criminal Cases Rules were amended to cover all criminal cases in the District Court."
+            },
+            "timeline7": {
+                "title":"All the Way to Privy Council",
+                "content":"Legal aid was extended to cover appeals to the Privy Council."
+            },
+            "timeline8": {
+                "title":"Criminal Legal Aid Extended",
+                "content":"Criminal legal aid was extended to cover committal proceedings in the Magistrates’ Court."
+            },
+            "timeline9": {
+                "title":"The Supplementary Legal Aid Scheme",
+                "content":"The Supplementary Legal Aid Scheme came into operation to provide legal representation for people who had reasonable grounds to claim but did not qualify for legal aid because they did not pass the means tests but, nonetheless, were unable to afford the high costs of litigation from their own financial resources. It was the first contingency legal aid fund in the world and became self-financing in 1990s."
+            },
+            "timeline10": {
+                "title":"Official Solicitor Ordinance",
+                "content":"The enactment of the Official Solicitor Ordinance appointing DLA as the first Official Solicitor who represents the interests of persons under a disability of age or mental capacity in proceedings (i.e. persons under the age of 18 or mentally incapacitated persons)."
+            },
+            "timeline11": {
+                "title":"Fairer System",
+                "content":"The Legal Aid (Amendment) Ordinance 1991 came into operation to replace the criteria of disposable income and disposable capital in the means test with a single criterion of “financial capacity” with the aim of achieving a system fairer to persons having only income or capital."
+            },
+            "timeline12": {
+                "title":"Further Support",
+                "content":"Legal Aid (Amendment) Ordinance 1995 came into operation and DLA has discretion to waive the limit of financial resources in the cases of applicants who have satisfied DLA that they have reasonable grounds to claim under the Hong Kong Bill of Rights Ordinance and the International Covenant on Civil and Political Rights as applied to Hong Kong."
+            },
+            "timeline13": {
+                "title":"Legal Aid Services Council",
+                "content":"Legal Aid Services Council was set up to supervise the provision of legal aid services provided by LAD and to advise the Government on legal aid policy."
+            },
+            "timeline14": {
+                "title":"Homepage of LAD",
+                "content":"Homepage was launched for the public to obtain on-line information about LAD"
+            },
+            "timeline15": {
+                "title":"Performance Pledge",
+                "content":"Performance pledge on processing time was introduced. Vision, mission and values statements were also launched. Subsequently in 1999, the performance pledge on payment was introduced."
+            },
+            "timeline16": {
+                "title":"New Pamphlet",
+                "content":"A pamphlet entitled “A Guide to Legal Aid Services in Hong Kong” was published."
+            },
+            "timeline17": {
+                "title":"Enhance Public Understanding",
+                "content":"Pamphlets covering a wide range of topics were published to enhance public understanding of legal aid services, such as ways to apply for legal aid, legal aid contribution and DLA’s First Charge."
+            },
+            "timeline18": {
+                "title":"Pilot Scheme on Mediation",
+                "content":"Introduction of the “Pilot Scheme on Legal Aid for Mediation in Matrimonial Cases”."
+            },
+            "timeline19": {
+                "title":"Market Mechanism",
+                "content":"According to Legal Aid (Charge on Property) (Rate of Interest) Regulation, DLA’s first charge interest rate would vary annually according to market movement instead of fixed annual rate of 10%."
+            },
+            "timeline20": {
+                "title":"Respond to Concern of People of Different Races",
+                "content":"Leaflets on legal aid services published in languages of people of different races."
+            },
+            "timeline21": {
+                "title":"Online Pre-application",
+                "content":"Launching of Legal Aid Electronic Services Portal (LAESP) for legal aid applicants to submit pre-application information through online."
+            },
+            "timeline22": {
+                "title":"A Further Increase",
+                "content":"Financial eligibility limit for Ordinary Legal Aid Scheme was raised from HK$175,800 to HK$260,000 and that for the Supplementary Legal Aid Scheme (SLAS) from HK$488,400 to HK$1,300,000."
+            },
+            "timeline23": {
+                "title":"Scopes Expanded for Negligence Claims",
+                "content":"The scope of SLAS was expanded to cover negligence claims against eight types of professionals, negligence claims against insurers or their intermediaries in respect of the taking out of personal insurance products, monetary claims against vendors in the sale of first hand residential properties, and representation for employees in appeals from Labour Tribunal."
+            },
+            "timeline24": {
+                "title":"Criminal Legal Aid Fees Restructured",
+                "content":"The structure of payment of criminal legal aid fees was enhanced by remunerating pre-trial work of lawyers according to the time required; assessing conference fee payable to solicitors on an hourly basis; and classifying a particular case and assessing the rates and the required preparation time beforehand and having them marked on the brief on assignment."
+            },
+            "timeline25": {
+                "title":"New Payment Methods",
+                "content":"Aided persons and the public may make payment to LAD with their ATM cards or credit cards at ATMs or through internet banking. The new payment methods afford greater convenience to aided persons and the public."
+            },
+            "timeline26": {
+                "title":"Enhancement of E-communication",
+                "content":"An electronic appointment system was launched for the public to make appointment to obtain application-related forms and documents via the LAESP on LAD’s website. The electronic appointment system further supports mobile device since 2019."
+            }
+        }
+    }
+  }

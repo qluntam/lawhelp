@@ -1,6 +1,8 @@
 import banner from '../assets/images/banner/directors.png';
 import pattern from '../assets/images/banner/banner_pattern.png';
-import pageTitle from '../assets/images/banner/director-title.png';
+import pageTitleTC from '../assets/images/banner/tc/director-title.png';
+import pageTitleSC from '../assets/images/banner/sc/director-title.png';
+import pageTitleEN from '../assets/images/banner/en/director-title.png';
 import directorImg from '../assets/images/pages/director/director.jpg'; 
 import signEN from '../assets/images/pages/director/sign-en.png';
 import signZH from '../assets/images/pages/director/sign-zh.png';
@@ -11,21 +13,40 @@ export default function Director() {
 
     const { t, i18n } = useTranslation('director');
 
+    let pageTitle, titleClass, sign;
+    switch(i18n.language) {
+        case "tc":
+            pageTitle = pageTitleTC;
+            titleClass = ' w-4/12';
+            sign = signZH;
+            break;
+        case "sc":
+            pageTitle = pageTitleSC;
+            titleClass = ' w-4/12';
+            sign = signZH;
+            break;
+        case "en":
+            pageTitle = pageTitleEN;
+            titleClass = ' w-6/12';
+            sign = signEN;
+            break;
+    }
+
     return (
         <div>
             <div className="topBar-nav"></div>
             <div className="pattern flex justify-end" style={{ backgroundImage: `url(${pattern})` }}>
                 <div className="relative w-4/5 bg-no-repeat bg-cover bg-right" style={{ backgroundImage: `url(${banner})` }}>
-                    <img src={pageTitle} className="object-scale-down w-4/12 absolute bottom-0 left-0 ml-3 mb-3" />
+                    <img src={pageTitle} className={"object-scale-down absolute bottom-0 left-0 ml-3 mb-3" + titleClass} />
                 </div>
             </div>
             <div className="flex mx-10 my-10">
                 <div className="w-3/12">
                     <img src={directorImg} />
                     <div className="ml-2 mt-5">
-                        鄺寶昌<br />
-                        法律援助署署長 <br />
-                        <img src={signZH} />
+                        {t('name')}<br />
+                        {t('title')} <br />
+                        <img src={sign} />
                     </div>
                 </div>
                 <div className="w-9/12 pl-10 text-justify">

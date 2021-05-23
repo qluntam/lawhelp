@@ -1,6 +1,8 @@
 import pattern from '../assets/images/banner/banner_pattern.png';
 import banner from '../assets/images/banner/events.jpg';
-import pageTitle from '../assets/images/banner/events-title.png'; 
+import pageTitleTC from '../assets/images/banner/tc/events-title.png';
+import pageTitleSC from '../assets/images/banner/sc/events-title.png';
+import pageTitleEN from '../assets/images/banner/en/events-title.png'; 
 
 import juneTitle from '../assets/images/pages/events/june.png'; 
 import julyTitle from '../assets/images/pages/events/july.png'; 
@@ -11,6 +13,7 @@ import React, { useRef } from 'react';
 import {
     useLocation
 } from "react-router-dom";
+import { useTranslation, Trans } from "react-i18next";
 
 
 export default function Events() {
@@ -32,12 +35,30 @@ export default function Events() {
         }
     });
 
+    const { t, i18n } = useTranslation('events');
+
+    let pageTitle, titleClass;
+    switch(i18n.language) {
+        case "tc":
+            pageTitle = pageTitleTC;
+            titleClass = ' w-4/12';
+            break;
+        case "sc":
+            pageTitle = pageTitleSC;
+            titleClass = ' w-4/12';
+            break;
+        case "en":
+            pageTitle = pageTitleEN;
+            titleClass = ' w-6/12';
+            break;
+    }
+
     return (
         <div>
             <div className="topBar-nav"></div>
             <div className="pattern flex justify-end" style={{ backgroundImage: `url(${pattern})` }}>
                 <div className="relative w-4/5 bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url(${banner})` }}>
-                    <img src={pageTitle} className="object-scale-down w-4/12 absolute bottom-0 left-0 ml-3 mb-3" />
+                    <img src={pageTitle} className={"object-scale-down absolute bottom-0 left-0 ml-3 mb-3" + titleClass} />
                 </div>
             </div>
             <div className="mb-40">
@@ -48,12 +69,12 @@ export default function Events() {
                     <div className="grid grid-cols-2 gap-20">
                         <div className="events">
                             <div className="title text-2xl">
-                                法律援助署五十周年巡迴展覽 - 第一場
+                                {t('june.event1.title')}
                             </div>
                             <div className="seprate my-2">
                                 <img src={titleBreak} />
                             </div>
-                            <div className="venue text-xl">香港大會堂低座展覽廳</div>
+                            <div className="venue text-xl">{t('june.event1.venue')}</div>
                             <div className="date ml-4 mt-6">
                                 <div className="times flex items-center mb-4">
                                     <div className="text-5xl font-bold mx-4 w-20">02</div>
@@ -74,12 +95,12 @@ export default function Events() {
                         </div>
                         <div className="events">
                             <div className="title text-2xl">
-                                法律援助署五十周年巡迴展覽 - 第二場
+                                {t('june.event2.title')}
                             </div>
                             <div className="seprate my-2">
                             <img src={titleBreak} />
                             </div>
-                            <div className="venue text-xl">油塘大本型中庭</div>
+                            <div className="venue text-xl">{t('june.event2.venue')}</div>
                             <div className="date ml-4 mt-6">
                                 <div className="times flex items-center mb-4">
                                     <div className="text-5xl font-bold mx-4 w-20">25</div>
@@ -100,7 +121,7 @@ export default function Events() {
                         </div>
                         <div className="events">
                             <div className="title text-2xl">
-                                「法援之道」首播
+                                {t('june.event3.title')}
                             </div>
                             <div className="seprate my-2">
                             <img src={titleBreak} />
@@ -116,7 +137,7 @@ export default function Events() {
                         </div>
                         <div className="events">
                             <div className="title text-2xl">
-                                「法援之道」播出
+                                {t('june.event4.title')}
                             </div>
                             <div className="seprate my-2">
                             <img src={titleBreak} />
@@ -143,7 +164,7 @@ export default function Events() {
                     <div className="grid grid-cols-2 gap-20">
                         <div className="events">
                             <div className="title text-2xl">
-                                「法援之道」播出
+                                {t('july.event1.title')}
                             </div>
                             <div className="seprate my-2">
                             <img src={titleBreak} />

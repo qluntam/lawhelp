@@ -1,10 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import "./i18n";
+import i18n from "./i18n";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+i18n.on('languageChanged', function(lng) {
+  console.log(lng);
+})
 
 ReactDOM.render(
   <React.StrictMode>
