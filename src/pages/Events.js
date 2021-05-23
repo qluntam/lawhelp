@@ -4,8 +4,12 @@ import pageTitleTC from '../assets/images/banner/tc/events-title.png';
 import pageTitleSC from '../assets/images/banner/sc/events-title.png';
 import pageTitleEN from '../assets/images/banner/en/events-title.png'; 
 
-import juneTitle from '../assets/images/pages/events/june.png'; 
-import julyTitle from '../assets/images/pages/events/july.png'; 
+import juneTitleTC from '../assets/images/pages/events/tc/june.png'; 
+import julyTitleTC from '../assets/images/pages/events/tc/july.png'; 
+import juneTitleSC from '../assets/images/pages/events/sc/june.png'; 
+import julyTitleSC from '../assets/images/pages/events/sc/july.png'; 
+import juneTitleEN from '../assets/images/pages/events/en/june.png'; 
+import julyTitleEN from '../assets/images/pages/events/en/july.png'; 
 import lineBreak from '../assets/images/pages/events/line-break.png'; 
 import titleBreak from '../assets/images/pages/events/title-break.png'; 
 
@@ -38,18 +42,25 @@ export default function Events() {
     const { t, i18n } = useTranslation('events');
 
     let pageTitle, titleClass;
+    let juneTitle, julyTitle
     switch(i18n.language) {
         case "tc":
             pageTitle = pageTitleTC;
             titleClass = ' w-4/12';
+            juneTitle = juneTitleTC;
+            julyTitle = julyTitleTC;
             break;
         case "sc":
             pageTitle = pageTitleSC;
             titleClass = ' w-4/12';
+            juneTitle = juneTitleSC;
+            julyTitle = julyTitleSC;
             break;
         case "en":
             pageTitle = pageTitleEN;
             titleClass = ' w-6/12';
+            juneTitle = juneTitleEN;
+            julyTitle = julyTitleEN;
             break;
     }
 
