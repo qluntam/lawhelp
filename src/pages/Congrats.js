@@ -117,7 +117,7 @@ export default function Congrats() {
                         <img src={pageTitle} className={"object-scale-down absolute bottom-0 left-0 ml-3 mb-3" + titleClass} />
                     </div>
                 </div>
-                <div className="grid grid-cols-2 grid-rows-2 gap-4 mx-5">
+                <div className="grid grid-cols-2 grid-rows-2 gap-4 mx-10">
                     <div className="flex m-5 cursor-pointer" onClick={clSCroll}>
                         <div className="profileImg">
                             <img src={CLpro} className="w-52" />
@@ -151,7 +151,7 @@ export default function Congrats() {
                         </div>
                     </div>
                 </div>
-                <div className="wording">
+                <div className="wording mx-10">
                     <div className="my-10">
                         <img src={lineBreak} />
                     </div>

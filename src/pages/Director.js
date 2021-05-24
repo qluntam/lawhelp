@@ -36,7 +36,7 @@ export default function Director() {
         <div>
             <div className="topBar-nav"></div>
             <div className="pattern flex justify-end" style={{ backgroundImage: `url(${pattern})` }}>
-                <div className="relative w-4/5 bg-no-repeat bg-cover bg-right" style={{ backgroundImage: `url(${banner})` }}>
+                <div className="relative w-4/5 bg-no-repeat bg-cover bg-right-top" style={{ backgroundImage: `url(${banner})` }}>
                     <img src={pageTitle} className={"object-scale-down absolute bottom-0 left-0 ml-3 mb-3" + titleClass} />
                 </div>
             </div>

@@ -9,10 +9,12 @@
         "events":"Event Calendar",
         "contactus":"Contact Us",
         "contactusURL":"https://www.lad.gov.hk/eng/home/contact.html",
+        "ladURL":"https://www.lad.gov.hk/eng/home/home.html",
         "sitemap":"Sitemap",
         "month":{
           "june":"June",
-          "july":"July"
+          "july":"July",
+          "august":"August"
         }
       }
     },
@@ -47,6 +49,12 @@
       "july":{
         "event1":{
           "title":"Broadcast of \"Legal Aid - a Gateway to Justice\""
+        }
+      },
+      "aug":{
+        "event1":{
+            "title":"Legal Aid Department 50th Anniversary Roving Exhibition - Third Exhibition",
+            "venue":"Coming Soon in August 2021 in the New Territories"
         }
       }
     },

@@ -9,10 +9,12 @@
         "events":"活动日程",
         "contactus":"联络我们",
         "contactusURL":"https://www.lad.gov.hk/chs/home/contact.html",
+        "ladURL":"https://www.lad.gov.hk/chs/home/home.html",
         "sitemap":"网页指南",
         "month":{
             "june":"6月",
-            "july":"7月"
+            "july":"7月",
+            "august":"8月"
         }
         }
     },
@@ -48,6 +50,12 @@
                   "event1": {
                     "title": "「法援之道」播出"
                   }
+                },
+                "aug": {
+                    "event1": {
+                      "title": "法律援助署五十周年巡迴展览 - 第叁场",
+                      "venue": "活动将於二零二一年八月在新界区举行"
+                    }
                 }
               },
                 

@@ -24,6 +24,18 @@ import {
 
 import { useTranslation, Trans } from "react-i18next";
 
+const HomeLog = () => {
+    let { t } = useTranslation('common');
+
+    return (
+        <div>
+            <a href={t('title.ladURL')} target="_blank">
+                <img src={logolad} alt="LAD" className="object-scale-down h-20 mr-8" />
+            </a>
+        </div>
+    );
+}
+
 class Header extends React.Component {
     constructor(props) {
       super(props);
@@ -58,6 +70,7 @@ class Header extends React.Component {
         } = this.state;
 
         let locale = this.props.locale;
+        let location = this.props.location;
 
         let langClass = ' text-primary hover:text-lang-bar';
         let openingHide = '';
@@ -75,43 +88,45 @@ class Header extends React.Component {
             logoPath = logofiftyWhite;
         }
 
-        let enHide = ''; let tcHide = ''; let scHide = ''; 
+        let enActive, tcActive, scActive;
 
         if (locale == 'en') {
-            enHide = ' hidden';
-            tcHide = '';
-            scHide = '';
+            enActive = ' text-lang-bar';
+            tcActive = "";
+            scActive = "";
         }
 
         if (locale == 'tc') {
-            enHide = '';
-            tcHide = ' hidden';
-            scHide = '';
+            enActive = '';
+            tcActive = " text-lang-bar";
+            scActive = "";
         }
 
         if (locale == 'sc') {
-            enHide = '';
-            tcHide = '';
-            scHide = ' hidden';
+            enActive = '';
+            tcActive = "";
+            scActive = " text-lang-bar";
         }
         
         return (
             <div className="head">
                 <div className={`flex flex-row mb-8 justify-between py-4` + (topBar)}>
                     <div className="flex flex-row ml-8">
-                        <div><img src={logolad} alt="LAD" className="object-scale-down h-20 mr-8" /></div>
+                        <div>
+                            <HomeLog />
+                        </div>
                         <div><img src={logoPath} alt="Fifty" className="object-scale-down h-20" /></div>
                     </div>
-                    <div className="text-center mr-4 mt-2">
+                    <div className="text-center mr-4">
                         <ul>
-                            <li className={`mb-3 px7 text-base` + (langClass) + (enHide)}>
-                                <Link to={`/en` + this.props.location}>English</Link>
+                            <li className={`mb-2 px-7 text-base` + (langClass) + tcActive}>
+                                <Link to={`/tc` + this.props.location}>繁體</Link>
                             </li>
-                            <li className={`mb-3 px-7 text-base` + (langClass) + (tcHide)}>
-                                <Link to={`/tc` + this.props.location}>䌓體</Link>
-                            </li>
-                            <li className={`px-7 text-base` + (langClass) + (scHide)}>
+                            <li className={`mb-2 px-7 text-base` + (langClass) + scActive}>
                                 <Link to={`/sc` + this.props.location}>简体</Link>
+                            </li>
+                            <li className={`px7 text-base` + (langClass) + enActive}>
+                                <Link to={`/en` + this.props.location}>English</Link>
                             </li>
                         </ul>
                     </div>
@@ -155,7 +170,7 @@ class Header extends React.Component {
                     </div>
                     <nav className={`icon-nav ml-10` + (openingHide)}>
                         <ul>
-                            <li className="nav-now rounded-full h-14 w-14 bg-white flex justify-center items-center mb-3 shadow-xl"
+                            <li className={"nav-now rounded-full h-14 w-14 bg-white flex justify-center items-center mb-3 shadow-xl"}
                             onMouseEnter={
                                 () => {
                                     this.setState({
@@ -178,7 +193,7 @@ class Header extends React.Component {
                                 </div>
                                 <div className="nav-tips text-fsm"><Trans i18nKey="title.menu" ns="common"></Trans></div>
                             </li>
-                            <li className="nav-now rounded-full h-14 w-14 bg-white flex justify-center items-center mb-3 shadow-xl"
+                            <li className={"nav-now rounded-full h-14 w-14 bg-white flex justify-center items-center mb-3 shadow-xl" + ((location == "/home") ? " active" : "")}
                             onMouseEnter={
                                 () => {
                                     this.setState({
@@ -197,11 +212,11 @@ class Header extends React.Component {
                                 <Link to={"/" + locale + "/home"}
                                 
                                 >
-                                    <img src={homepageIcon} className="object-scale-down w-10 h-10 m-auto" />
+                                    <img src={((location == "/home") ? homepageHover : homepageIcon)} className="object-scale-down w-10 h-10 m-auto" />
                                 </Link>
                                 <div className="nav-tips text-fsm"><Trans i18nKey="title.homepage" ns="common"></Trans></div>
                             </li>
-                            <li className="nav-now rounded-full h-14 w-14 bg-white flex justify-center  items-center mb-3 shadow-xl"
+                            <li className={"nav-now rounded-full h-14 w-14 bg-white flex justify-center  items-center mb-3 shadow-xl" + ((location == "/director") ? " active" : "")}
                             onMouseEnter={
                                 () => {
                                     this.setState({
@@ -220,11 +235,11 @@ class Header extends React.Component {
                                 <Link to={"/" + locale + "/director"}
                                 
                                 >
-                                    <img src={directorIcon} className="object-scale-down w-10 h-10 m-auto" />
+                                    <img src={((location == "/director") ? directorHover : directorIcon)} className="object-scale-down w-10 h-10 m-auto" />
                                 </Link>
                                 <div className="nav-tips text-fsm"><Trans i18nKey="title.director" ns="common"></Trans></div>
                             </li>
-                            <li className="nav-now rounded-full h-14 w-14 bg-white flex justify-center  items-center mb-3 shadow-xl"
+                            <li className={"nav-now rounded-full h-14 w-14 bg-white flex justify-center  items-center mb-3 shadow-xl" + ((location == "/message") ? " active" : "")}
                             onMouseEnter={
                                 () => {
                                     this.setState({
@@ -243,11 +258,11 @@ class Header extends React.Component {
                                 <Link to={"/" + locale + "/message"}
                                 
                                 >
-                                    <img src={msgIcon} className="object-scale-down w-10 h-10 m-auto" />
+                                    <img src={((location == "/message") ? msgHover : msgIcon)} className="object-scale-down w-10 h-10 m-auto" />
                                 </Link>
                                 <div className="nav-tips text-fsm"><Trans i18nKey="title.congrats" ns="common"></Trans></div>
                             </li>
-                            <li className="nav-now rounded-full h-14 w-14 bg-white flex justify-center  items-center mb-3 shadow-xl"
+                            <li className={"nav-now rounded-full h-14 w-14 bg-white flex justify-center  items-center mb-3 shadow-xl" + ((location == "/milestone") ? " active" : "")}
                             onMouseEnter={
                                 () => {
                                     this.setState({
@@ -264,11 +279,11 @@ class Header extends React.Component {
                             } 
                             >
                                 <Link to={"/" + locale + "/milestone"}>
-                                    <img src={milestoneIcon} className="object-scale-down w-10 h-10 m-auto" />
+                                    <img src={((location == "/milestone") ? milestoneHover : milestoneIcon)} className="object-scale-down w-10 h-10 m-auto" />
                                 </Link>
                                 <div className="nav-tips text-fsm"><Trans i18nKey="title.milestone" ns="common"></Trans></div>
                             </li>
-                            <li className="nav-now rounded-full h-14 w-14 bg-white flex justify-center  items-center mb-3 shadow-xl"
+                            <li className={"nav-now rounded-full h-14 w-14 bg-white flex justify-center  items-center mb-3 shadow-xl" + ((location == "/events") ? " active" : "")}
                             onMouseEnter={
                                 () => {
                                     this.setState({
@@ -286,7 +301,7 @@ class Header extends React.Component {
                             >
                                 
                                 <Link to={"/" + locale + "/events"}>
-                                    <img src={calIcon} className="object-scale-down w-10 h-10 m-auto" />
+                                    <img src={((location == "/events") ? calHover : calIcon)} className="object-scale-down w-10 h-10 m-auto" />
                                 </Link>
                                 <div className="nav-tips text-fsm"><Trans i18nKey="title.events" ns="common"></Trans></div>
                             </li>

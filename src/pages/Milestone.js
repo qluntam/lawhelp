@@ -4,19 +4,21 @@ import pageTitleTC from '../assets/images/banner/tc/milestone-title.png';
 import pageTitleSC from '../assets/images/banner/sc/milestone-title.png';
 import pageTitleEN from '../assets/images/banner/en/milestone-title.png'; 
 
-import btn1960 from '../assets/images/pages/milestone/btn1960.png'
-import btn1970 from '../assets/images/pages/milestone/btn1970.png'
-import btn1980 from '../assets/images/pages/milestone/btn1980.png'
-import btn1990 from '../assets/images/pages/milestone/btn1990.png'
-import btn2000 from '../assets/images/pages/milestone/btn2000.png'
-import btn2010 from '../assets/images/pages/milestone/btn2010.png'
+import btn1960 from '../assets/images/pages/milestone/btn1960.svg'
+import btn1970 from '../assets/images/pages/milestone/btn1970.svg'
+import btn1980 from '../assets/images/pages/milestone/btn1980.svg'
+import btn1990 from '../assets/images/pages/milestone/btn1990.svg'
+import btn2000 from '../assets/images/pages/milestone/btn2000.svg'
+import btn2010 from '../assets/images/pages/milestone/btn2010.svg'
+import btn2020 from '../assets/images/pages/milestone/btn2020.svg'
 
-import title1960 from '../assets/images/pages/milestone/title1960.png'
-import title1970 from '../assets/images/pages/milestone/title1970.png'
-import title1980 from '../assets/images/pages/milestone/title1980.png'
-import title1990 from '../assets/images/pages/milestone/title1990.png'
-import title2000 from '../assets/images/pages/milestone/title2000.png'
-import title2010 from '../assets/images/pages/milestone/title2010.png'
+import title1960 from '../assets/images/pages/milestone/title1960.svg'
+import title1970 from '../assets/images/pages/milestone/title1970.svg'
+import title1980 from '../assets/images/pages/milestone/title1980.svg'
+import title1990 from '../assets/images/pages/milestone/title1990.svg'
+import title2000 from '../assets/images/pages/milestone/title2000.svg'
+import title2010 from '../assets/images/pages/milestone/title2010.svg'
+import title2020 from '../assets/images/pages/milestone/title2020.svg'
 
 import Img19661123 from '../assets/images/pages/milestone/1966.11.23.jpg'
 import Img19670112 from '../assets/images/pages/milestone/1967.01.12.jpg'
@@ -93,8 +95,9 @@ export default function Milestone() {
                         <div onClick={btnY1990} className="cursor-pointer"><img src={btn1990} /></div>
                         <div onClick={btnY2000} className="cursor-pointer"><img src={btn2000} /></div>
                         <div onClick={btnY2010} className="cursor-pointer"><img src={btn2010} /></div>
+                        <div><img src={btn2020} /></div>
                     </div>
-                    <div ref={y1960} className="years mb-40">
+                    <div ref={y1960} className="years">
                         <div>
                             <img src={title1960} className="w-3/12"/>
                         </div>
@@ -137,7 +140,7 @@ export default function Milestone() {
                             </div>
                         </div>
                     </div>
-                    <div ref={y1970} className="years mb-40">
+                    <div ref={y1970} className="years">
                         <div>
                             <img src={title1970} className="w-3/12"/>
                         </div>
@@ -157,7 +160,7 @@ export default function Milestone() {
                                 </div>
                             </div>
                             <div>
-                                <img  />
+                                <img src={Img1978} className="mx-auto" />
                             </div>
                         </div>
                         <div className="grid grid-cols-3 my-10">
@@ -193,7 +196,7 @@ export default function Milestone() {
                                 </div>
                             </div>
                             <div>
-                                <img src={Img1978} className="mx-auto" />
+                                <img />
                             </div>
                         </div>
                         <div className="grid grid-cols-3 my-10">
@@ -216,7 +219,7 @@ export default function Milestone() {
                             </div>
                         </div>
                     </div>
-                    <div ref={y1980} className="years mb-40">
+                    <div ref={y1980} className="years">
                         <div>
                             <img src={title1980} className="w-3/12"/>
                         </div>
@@ -281,7 +284,7 @@ export default function Milestone() {
 
                     </div>
 
-                    <div ref={y1990} className="years mb-40">
+                    <div ref={y1990} className="years">
                         <div>
                             <img src={title1990} className="w-3/12"/>
                         </div>
@@ -439,7 +442,7 @@ export default function Milestone() {
                         </div>
                     </div>
 
-                    <div ref={y2000} className="years mb-40">
+                    <div ref={y2000} className="years">
                         <div>
                             <img src={title2000} className="w-3/12"/>
                         </div>
@@ -521,7 +524,7 @@ export default function Milestone() {
                         
                     </div>
 
-                    <div ref={y2010} className="years mb-40">
+                    <div ref={y2010} className="years">
                         <div>
                             <img src={title2010} className="w-3/12"/>
                         </div>

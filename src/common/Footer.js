@@ -42,13 +42,16 @@ export default function Footer() {
                             <li className="text-xl hover:text-white">
                                 <Link to={locale + "/events#jul"}>{t('title.month.july')}</Link>
                             </li>
+                            <li className="text-xl hover:text-white">
+                                <Link to={locale + "/events#aug"}>{t('title.month.august')}</Link>
+                            </li>
                         </ul>
                     </li>
                 </ul>
             </div>
             <div className="copyright-social p-10">
                 <div className="flex flex-row justify-end mb-4 ">
-                    <div><a href="https://www.lad.gov.hk/chi/home/home.html" target="_blank"><img src={logolad} alt="LAD" className="object-scale-down h-20 mr-8" /></a></div>
+                    <div><a href={t('title.ladURL')} target="_blank"><img src={logolad} alt="LAD" className="object-scale-down h-20 mr-8" /></a></div>
                     <div><img src={logofiftyWhite} alt="Fifty" className="object-scale-down h-20" /></div>
                 </div>
                 <div className="social-logo flex justify-end">
