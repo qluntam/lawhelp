@@ -108,7 +108,7 @@ class Header extends React.Component {
                                 <Link to={`/en` + this.props.location}>English</Link>
                             </li>
                             <li className={`mb-3 px-7 text-base` + (langClass) + (tcHide)}>
-                                <Link to={`/tc` + this.props.location}>䌓體</Link>
+                                <Link to={`/tc` + this.props.location}>繁體</Link>
                             </li>
                             <li className={`px-7 text-base` + (langClass) + (scHide)}>
                                 <Link to={`/sc` + this.props.location}>简体</Link>
