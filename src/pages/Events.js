@@ -233,28 +233,7 @@ export default function Events() {
                             <img src={titleBreak} />
                             </div>
                             <div className="venue text-xl">{t('aug.event1.venue')}</div>
-                            <div className="date ml-4 mt-6">
-                                <div className="times flex items-center mb-4">
-                                    <div className="text-5xl font-bold mx-4 w-20">04</div>
-                                    <div className="text-base font-bold mx-4 w-20">(SUN)<br />AUG</div>
-                                    <div className="text-xl font-bold mx-4">21:30</div>
-                                </div>
-                                <div className="times flex items-center mb-4">
-                                    <div className="text-5xl font-bold mx-4 w-20">11</div>
-                                    <div className="text-base font-bold mx-4 w-20">(SUN)<br />AUG</div>
-                                    <div className="text-xl font-bold mx-4">21:30</div>
-                                </div>
-                                <div className="times flex items-center mb-4">
-                                    <div className="text-5xl font-bold mx-4 w-20">18</div>
-                                    <div className="text-base font-bold mx-4 w-20">(SUN)<br />AUG</div>
-                                    <div className="text-xl font-bold mx-4">21:30</div>
-                                </div>
-                                <div className="times flex items-center mb-4">
-                                    <div className="text-5xl font-bold mx-4 w-20">25</div>
-                                    <div className="text-base font-bold mx-4 w-20">(SUN)<br />AUG</div>
-                                    <div className="text-xl font-bold mx-4">21:30</div>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
