@@ -160,7 +160,7 @@ export default function Milestone() {
                                 </div>
                             </div>
                             <div>
-                                <img src={Img1978} className="mx-auto" />
+                                <img src={Img19780401} />
                             </div>
                         </div>
                         <div className="grid grid-cols-3 my-10">
@@ -196,7 +196,7 @@ export default function Milestone() {
                                 </div>
                             </div>
                             <div>
-                                <img />
+                                <img src={Img1978} className="mx-auto" />
                             </div>
                         </div>
                         <div className="grid grid-cols-3 my-10">
@@ -215,7 +215,7 @@ export default function Milestone() {
                                 </div>
                             </div>
                             <div>
-                                <img src={Img19780401} />
+                                <img />
                             </div>
                         </div>
                     </div>
@@ -436,7 +436,7 @@ export default function Milestone() {
                                 {t('timelines.timeline17.content')}
                                 </div>
                             </div>
-                            <div className="flex">
+                            <div className="flex items-start">
                                 <img src={Img1999en} className="w-6/12" /><img src={Img1999zh} className="w-6/12" />
                             </div>
                         </div>
@@ -497,7 +497,7 @@ export default function Milestone() {
                                 {t('timelines.timeline20.content')}
                                 </div>
                             </div>
-                            <div className="flex">
+                            <div className="flex items-start">
                                 <img src={Img20081} className="w-4/12" />
                                 <img src={Img20082} className="w-4/12" />
                                 <img src={Img20083} className="w-4/12" />
