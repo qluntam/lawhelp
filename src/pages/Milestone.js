@@ -81,11 +81,11 @@ export default function Milestone() {
         <div>
             <div className="topBar-nav"></div>
             <div className="pattern flex justify-end" style={{ backgroundImage: `url(${pattern})` }}>
-                <div className="relative w-4/5 bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url(${banner})` }}>
+                <div className="relative w-full md:w-4/5 bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url(${banner})` }}>
                     <img src={pageTitle} className={"object-scale-down absolute bottom-0 left-0 ml-3 mb-3" + titleClass} />
                 </div>
             </div>
-            <div className="grid grid-cols-7">
+            <div className="grid md:grid-cols-7 mx-5 md:mx-0">
                 <div></div>
                 <div className="col-span-6">
                     <div className="flex justify-end">
@@ -99,10 +99,10 @@ export default function Milestone() {
                     </div>
                     <div ref={y1960} className="years">
                         <div>
-                            <img src={title1960} className="w-3/12"/>
+                            <img src={title1960} className="w-6/12 md:w-3/12"/>
                         </div>
-                        <div className="grid grid-cols-3 my-10">
-                            <div className="col-span-2 mr-5">
+                        <div className="grid grid-cols-1 md:grid-cols-3 my-10">
+                            <div className="col-span-2 mr-5 my-2">
                                 <div className="flex items-center my-5">
                                     <div className="text-5xl font-bold mr-10">
                                         1966<br />

@@ -36,12 +36,12 @@ export default function Director() {
         <div>
             <div className="topBar-nav"></div>
             <div className="pattern flex justify-end" style={{ backgroundImage: `url(${pattern})` }}>
-                <div className="relative w-4/5 bg-no-repeat bg-cover bg-right-top" style={{ backgroundImage: `url(${banner})` }}>
+                <div className="relative w-full md:w-4/5 bg-no-repeat bg-cover bg-right-top" style={{ backgroundImage: `url(${banner})` }}>
                     <img src={pageTitle} className={"object-scale-down absolute bottom-0 left-0 ml-3 mb-3" + titleClass} />
                 </div>
             </div>
-            <div className="flex mx-10 my-10">
-                <div className="w-3/12">
+            <div className="flex mx-10 my-10 flex-col md:flex-row">
+                <div className="w-full md:w-3/12">
                     <img src={directorImg} />
                     <div className="ml-2 mt-5">
                         {t('name')}<br />
@@ -49,7 +49,7 @@ export default function Director() {
                         <img src={sign} />
                     </div>
                 </div>
-                <div className="w-9/12 pl-10 text-justify">
+                <div className="w-full md:w-9/12 md:pl-10 text-justify">
                     <Trans i18nKey="word" ns="director">
                         <p className="mb-4">本署於2000年出版「法義之門」紀念特刊，為部門三十周年誌慶。本署一直堅守使命，繼往開來，藉着前人奠下的堅實穩固基礎，不斷拓展及提升法律援助服務，確保所有符合資格接受法律援助的人，不會因欠缺經濟能力而沒法尋求公義。多年來，法援署無懼種種改變和挑戰，與社會一同茁壯成長，成績令人振奮。 </p>
                         <p className="mb-4">過去二十年，香港發展一日千里，為緊貼社會步伐，與時並進，本署除了主動檢視服務範疇及工作流程外，還引進嶄新科技，以及為工作注入新元素。就整體法律援助服務而言，本署喜見普通法律援助計劃(普通計劃)及法律援助輔助計劃(輔助計劃)的範圍擴大至涵蓋更多類別的訴訟。目前，本署每年處理逾15,000宗民事法援申請，以及超過3,000宗刑事法援申請，當中大部分個案的性質複雜，而且影響深遠。本署亦不時就評定法援申請人財務資格的準則，以及申請人的財務資格限額進行檢討。為落實2019年《施政報告》的措施，經本署提請後，普通計劃及輔助計劃的財務資格限額已於2020年6月26日起，分別調高至420,400港元及 2,102,000港元。</p>
