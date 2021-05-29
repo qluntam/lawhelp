@@ -120,7 +120,7 @@ export default function Milestone() {
                                 <img src={Img19661123} />
                             </div>
                         </div>
-                        <div className="grid grid-cols-3 my-10">
+                        <div className="grid grid-cols-1 md:grid-cols-3 my-10">
                             <div className="col-span-2 mr-5">
                                 <div className="flex items-center my-5">
                                     <div className="text-5xl font-bold mr-10">
@@ -142,9 +142,9 @@ export default function Milestone() {
                     </div>
                     <div ref={y1970} className="years">
                         <div>
-                            <img src={title1970} className="w-3/12"/>
+                            <img src={title1970} className="w-6/12 md:w-3/12"/>
                         </div>
-                        <div className="grid grid-cols-3 my-10">
+                        <div className="grid grid-cols-1 md:grid-cols-3 my-10">
                             <div className="col-span-2 mr-5">
                                 <div className="flex items-center my-10">
                                     <div className="text-5xl font-bold mr-5">
@@ -163,7 +163,7 @@ export default function Milestone() {
                                 <img src={Img19780401} />
                             </div>
                         </div>
-                        <div className="grid grid-cols-3 my-10">
+                        <div className="grid grid-cols-1 md:grid-cols-3 my-10">
                             <div className="col-span-2 mr-5">
                                 <div className="flex items-center my-10">
                                     <div className="text-5xl font-bold mr-5">
@@ -181,7 +181,7 @@ export default function Milestone() {
                                 <img />
                             </div>
                         </div>
-                        <div className="grid grid-cols-3 my-10">
+                        <div className="grid grid-cols-1 md:grid-cols-3 my-10">
                             <div className="col-span-2 mr-5">
                                 <div className="flex items-center my-10">
                                     <div className="text-5xl font-bold mr-5">
@@ -199,7 +199,7 @@ export default function Milestone() {
                                 <img src={Img1978} className="mx-auto" />
                             </div>
                         </div>
-                        <div className="grid grid-cols-3 my-10">
+                        <div className="grid grid-cols-1 md:grid-cols-3 my-10">
                             <div className="col-span-2 mr-5">
                                 <div className="flex items-center my-10">
                                     <div className="text-5xl font-bold mr-5">
@@ -221,9 +221,9 @@ export default function Milestone() {
                     </div>
                     <div ref={y1980} className="years">
                         <div>
-                            <img src={title1980} className="w-3/12"/>
+                            <img src={title1980} className="w-6/12 md:w-3/12"/>
                         </div>
-                        <div className="grid grid-cols-3 my-10">
+                        <div className="grid grid-cols-1 md:grid-cols-3 my-10">
                             <div className="col-span-2 mr-5">
                                 <div className="flex items-center my-10">
                                     <div className="text-5xl font-bold mr-5">
@@ -242,7 +242,7 @@ export default function Milestone() {
                                 <img src={Img19820423} className="mx-auto" />
                             </div>
                         </div>
-                        <div className="grid grid-cols-3 my-10">
+                        <div className="grid grid-cols-1 md:grid-cols-3 my-10">
                             <div className="col-span-2 mr-5">
                                 <div className="flex items-center my-10">
                                     <div className="text-5xl font-bold mr-5">
@@ -262,7 +262,7 @@ export default function Milestone() {
                             </div>
                         </div>
 
-                        <div className="grid grid-cols-3 my-10">
+                        <div className="grid grid-cols-1 md:grid-cols-3 my-10">
                             <div className="col-span-2 mr-5">
                                 <div className="flex items-center my-10">
                                     <div className="text-5xl font-bold mr-5">
@@ -286,9 +286,9 @@ export default function Milestone() {
 
                     <div ref={y1990} className="years">
                         <div>
-                            <img src={title1990} className="w-3/12"/>
+                            <img src={title1990} className="w-6/12 md:w-3/12"/>
                         </div>
-                        <div className="grid grid-cols-3 my-10">
+                        <div className="grid grid-cols-1 md:grid-cols-3 my-10">
                             <div className="col-span-2 mr-5">
                                 <div className="flex items-center my-10">
                                     <div className="text-5xl font-bold mr-5">
@@ -307,7 +307,7 @@ export default function Milestone() {
                                 <img src={Img19910801} className="mx-auto" />
                             </div>
                         </div>
-                        <div className="grid grid-cols-3 my-10">
+                        <div className="grid grid-cols-1 md:grid-cols-3 my-10">
                             <div className="col-span-2 mr-5">
                                 <div className="flex items-center my-10">
                                     <div className="text-5xl font-bold mr-5">
@@ -326,7 +326,7 @@ export default function Milestone() {
                                 <img className="mx-auto" />
                             </div>
                         </div>
-                        <div className="grid grid-cols-3 my-10">
+                        <div className="grid grid-cols-1 md:grid-cols-3 my-10">
                             <div className="col-span-2 mr-5">
                                 <div className="flex items-center my-10">
                                     <div className="text-5xl font-bold mr-5">
@@ -345,7 +345,7 @@ export default function Milestone() {
                                 <img className="mx-auto" />
                             </div>
                         </div>
-                        <div className="grid grid-cols-3 my-10">
+                        <div className="grid grid-cols-1 md:grid-cols-3 my-10">
                             <div className="col-span-2 mr-5">
                                 <div className="flex items-center my-10">
                                     <div className="text-5xl font-bold mr-5">
@@ -364,7 +364,7 @@ export default function Milestone() {
                                 <img src={Img19960901} className="mx-auto" />
                             </div>
                         </div>
-                        <div className="grid grid-cols-3 my-10">
+                        <div className="grid grid-cols-1 md:grid-cols-3 my-10">
                             <div className="col-span-2 mr-5">
                                 <div className="flex items-center my-10">
                                     <div className="text-5xl font-bold mr-5">
@@ -383,7 +383,7 @@ export default function Milestone() {
                                 <img src={Img199710} className="mx-auto" />
                             </div>
                         </div>
-                        <div className="grid grid-cols-3 my-10">
+                        <div className="grid grid-cols-1 md:grid-cols-3 my-10">
                             <div className="col-span-2 mr-5">
                                 <div className="flex items-center my-10">
                                     <div className="text-5xl font-bold mr-5">
@@ -402,7 +402,7 @@ export default function Milestone() {
                                 <img src={Img199711} className="mx-auto" />
                             </div>
                         </div>
-                        <div className="grid grid-cols-3 my-10">
+                        <div className="grid grid-cols-1 md:grid-cols-3 my-10">
                             <div className="col-span-2 mr-5">
                                 <div className="flex items-center my-10">
                                     <div className="text-5xl font-bold mr-5">
@@ -421,7 +421,7 @@ export default function Milestone() {
                                 <img src={Img199810} className="mx-auto" />
                             </div>
                         </div>
-                        <div className="grid grid-cols-3 my-10">
+                        <div className="grid grid-cols-1 md:grid-cols-3 my-10">
                             <div className="col-span-2 mr-5">
                                 <div className="flex items-center my-10">
                                     <div className="text-5xl font-bold mr-5">
@@ -444,9 +444,9 @@ export default function Milestone() {
 
                     <div ref={y2000} className="years">
                         <div>
-                            <img src={title2000} className="w-3/12"/>
+                            <img src={title2000} className="w-6/12 md:w-3/12"/>
                         </div>
-                        <div className="grid grid-cols-3 my-10">
+                        <div className="grid grid-cols-1 md:grid-cols-3 my-10">
                             <div className="col-span-2 mr-5">
                                 <div className="flex items-center my-10">
                                     <div className="text-5xl font-bold mr-5">
@@ -465,7 +465,7 @@ export default function Milestone() {
                                 <img src={Img200503} className="mx-auto" />
                             </div>
                         </div>
-                        <div className="grid grid-cols-3 my-10">
+                        <div className="grid grid-cols-1 md:grid-cols-3 my-10">
                             <div className="col-span-2 mr-5">
                                 <div className="flex items-center my-10">
                                     <div className="text-5xl font-bold mr-5">
@@ -483,7 +483,7 @@ export default function Milestone() {
                                 <img src={Img2006} className="mx-auto" />
                             </div>
                         </div>
-                        <div className="grid grid-cols-3 my-10">
+                        <div className="grid grid-cols-1 md:grid-cols-3 my-10">
                             <div className="col-span-2 mr-5">
                                 <div className="flex items-center my-10">
                                     <div className="text-5xl font-bold mr-5">
@@ -503,7 +503,7 @@ export default function Milestone() {
                                 <img src={Img20083} className="w-4/12" />
                             </div>
                         </div>
-                        <div className="grid grid-cols-3 my-10">
+                        <div className="grid grid-cols-1 md:grid-cols-3 my-10">
                             <div className="col-span-2 mr-5">
                                 <div className="flex items-center my-10">
                                     <div className="text-5xl font-bold mr-5">
@@ -526,9 +526,9 @@ export default function Milestone() {
 
                     <div ref={y2010} className="years">
                         <div>
-                            <img src={title2010} className="w-3/12"/>
+                            <img src={title2010} className="w-6/12 md:w-3/12"/>
                         </div>
-                        <div className="grid grid-cols-3 my-10">
+                        <div className="grid grid-cols-1 md:grid-cols-3 my-10">
                             <div className="col-span-2 mr-5">
                                 <div className="flex items-center my-10">
                                     <div className="text-5xl font-bold mr-5">
@@ -547,7 +547,7 @@ export default function Milestone() {
                                 <img className="mx-auto" />
                             </div>
                         </div>
-                        <div className="grid grid-cols-3 my-10">
+                        <div className="grid grid-cols-1 md:grid-cols-3 my-10">
                             <div className="col-span-2 mr-5">
                                 <div className="flex items-center my-10">
                                     <div className="text-5xl font-bold mr-5">
@@ -565,7 +565,7 @@ export default function Milestone() {
                                 <img className="mx-auto" />
                             </div>
                         </div>
-                        <div className="grid grid-cols-3 my-10">
+                        <div className="grid grid-cols-1 md:grid-cols-3 my-10">
                             <div className="col-span-2 mr-5">
                                 <div className="flex items-center my-10">
                                     <div className="text-5xl font-bold mr-5">
@@ -584,7 +584,7 @@ export default function Milestone() {
                                 <img src={Img201203} className="mx-auto" />
                             </div>
                         </div>
-                        <div className="grid grid-cols-3 my-10">
+                        <div className="grid grid-cols-1 md:grid-cols-3 my-10">
                             <div className="col-span-2 mr-5">
                                 <div className="flex items-center my-10">
                                     <div className="text-5xl font-bold mr-5">
@@ -602,7 +602,7 @@ export default function Milestone() {
                                 <img src={Img2015} className="mx-auto" />
                             </div>
                         </div>
-                        <div className="grid grid-cols-3 my-10">
+                        <div className="grid grid-cols-1 md:grid-cols-3 my-10">
                             <div className="col-span-2 mr-5">
                                 <div className="flex items-center my-10">
                                     <div className="text-5xl font-bold mr-5">

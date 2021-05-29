@@ -108,6 +108,25 @@ body, html {
   color: #ffffff;
 }
 
+.home-banner {
+  width: 100%;
+  min-height: 570px;
+}
+.home-banner:before {
+  content: "";
+  display: block;
+  padding-top: 74%;
+}
+
+.startup-banner {
+  width: 100%;
+  min-height: 480px;
+}
+.startup-banner:before {
+  content: "";
+  display: block;
+  padding-top: 56%;
+}
 
 @keyframes App-logo-spin {
   from {

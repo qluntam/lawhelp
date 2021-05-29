@@ -88,7 +88,7 @@ export default function Events() {
                     <div className="my-10">
                         <img src={juneTitle} className="h-20" />
                     </div>
-                    <div className="grid grid-cols-2 gap-20">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
                         <div className="events">
                             <div className="title text-2xl">
                                 {t('june.event1.title')}
@@ -183,7 +183,7 @@ export default function Events() {
                     <div className="my-10">
                         <img src={julyTitle} className="h-20" />
                     </div>
-                    <div className="grid grid-cols-2 gap-20">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
                         <div className="events">
                             <div className="title text-2xl">
                                 {t('july.event1.title')}
@@ -224,7 +224,7 @@ export default function Events() {
                     <div className="my-10">
                         <img src={augustTitle} className="h-20" />
                     </div>
-                    <div className="grid grid-cols-2 gap-20">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
                         <div className="events">
                             <div className="title text-2xl">
                                 {t('aug.event1.title')}
